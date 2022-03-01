@@ -1,0 +1,76 @@
+$textColor: white;
+.container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+
+  .logo {
+    display: inline-block;
+    img {
+      width: 100%;
+      height: 80px;
+      cursor: pointer;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+      text-transform: uppercase;
+      color: $textColor;
+      position: relative;
+      &:hover {
+        background: transparent;
+        color: rgb(226, 217, 217);
+      }
+      &::after {
+        transition: all 0.5s ease-in-out;
+        content: "";
+        height: 2px;
+        position: absolute;
+        width: 0;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+        background-color: $textColor;
+      }
+
+      &:hover::after {
+        width: 30%;
+        left: 50%;
+      }
+    }
+    .dropList {
+      transition: all 0.5s ease;
+      height: auto;
+      pointer-events: auto;
+      position: relative;
+      .dropdown {
+        position: absolute;
+        opacity: 0;
+        display: flex;
+        width: 300px;
+        left: 20px;
+        transform: translateY(100%);
+        transition: all 0.5s ease;
+        p {
+          font-size: 0.8rem;
+          margin-right: 5px;
+          color: white;
+        }
+      }
+      &:hover {
+        .dropdown {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.container:hover {
+  padding-bottom: 50px;
+}
