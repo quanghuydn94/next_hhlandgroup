@@ -19,12 +19,13 @@
       }
     }
     p {
-      color: var(--title-color-);
+      color: var(--text-color-);
     }
     .button {
       float: right;
       text-transform: capitalize;
       font-size: 0.8rem;
+      color: var(--text-color-);
       .icon {
         color: var(--primary-color-);
         transition: all 0.5s ease;

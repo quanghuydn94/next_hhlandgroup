@@ -17,7 +17,7 @@ function CardItem({ handleDetail }) {
           tâm Thị trấn Chợ Chùa. Sở hữu hơn 1km mặt tiền đường Phạm Văn Đồng
         </Typography>
         <Button className={styles.button}>
-          <ArrowRight fontSize="small" className={styles.icon} /> Xem them
+          <ArrowRight fontSize="small" className={styles.icon} /> Xem thêm
         </Button>
       </div>
     </div>

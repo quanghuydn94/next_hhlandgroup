@@ -1,21 +1,116 @@
+$textSizeInfor: 0.8rem;
+$textSizeCommon: 0.9rem;
 .wrapper {
-  background: white;
-  color: var(--primary-color-);
+  width: 100%;
   border-top: 0.5px solid var(--primary-color-);
-  .content {
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
+  background: #fafafa;
+  .container {
+    color: var(--primary-color-);
+    padding: 30px 0;
+    max-width: 1920px;
+    margin: 0 auto;
     .infor {
-      h6 {
-        font-size: 1rem;
+      padding: 0 30px;
+      margin-bottom: 30px;
+      display: grid;
+      grid-template-columns: 150px auto;
+      grid-gap: 20px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .items {
+        h6 {
+          font-weight: 600;
+          margin-top: 0;
+        }
+        p {
+          color: var(--text-color-);
+          font-size: $textSizeInfor;
+        }
+        span {
+          color: var(--primary-color-);
+          font-weight: 600;
+        }
       }
     }
-    .items {
-      text-align: right;
-      p {
-        font-size: 0.9rem;
+    .policy {
+      padding: 0 30px;
+      margin-bottom: 30px;
+      .content {
+        p {
+          font-size: $textSizeCommon;
+        }
+        img {
+          width: 150px;
+          height: 100%;
+        }
+        .icons {
+          margin: 20px 0;
+          svg {
+            transition: all 0.5s ease;
+            margin-right: 10px;
+            &:hover {
+              cursor: pointer;
+              color: white;
+              background-color: var(--color-hover-);
+              transform: rotate(360deg);
+            }
+          }
+        }
       }
     }
+    .getNews {
+      padding: 0 30px;
+      .form {
+        h6 {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+        }
+        .button {
+          background: var(--primary-color-);
+          color: white;
+          margin-top: 5px;
+          position: relative;
+          height: 40px;
+          overflow: hidden;
+          &:hover {
+            background: var(--color-hover-);
+          }
+          &::after,
+          &::before {
+            transition: all 0.5s ease;
+            content: "Gửi đi";
+            height: 2px;
+            position: absolute;
+            bottom: 0px;
+            top: 10px;
+            text-align: center;
+            text-transform: none;
+          }
+          &::before {
+            content: "";
+            top: 30px;
+            font-size: 2rem;
+            left: 50%;
+            margin-left: 5px;
+            transform: rotate(60deg);
+          }
+          &:hover::after {
+            top: -30px;
+          }
+          &:hover::before {
+            content: "\002B99";
+            top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 1280px) {
+  .wrapper .container .infor {
+    grid-template-columns: 0 auto;
+    grid-gap: 0px;
   }
 }
