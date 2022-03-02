@@ -1,0 +1,41 @@
+.container {
+  padding: 40px 20px;
+  .leftBar {
+    padding-top: 53px;
+    padding-right: 20px;
+    .listMenu {
+      position: sticky;
+      top: 100px;
+      .item {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #dad4d4;
+        font-size: 0.9rem;
+        color: var(--title-color-);
+        &:hover {
+          color: var(--color-hover-);
+          background: transparent;
+        }
+        &:last-child {
+          border-bottom: 1px solid #dad4d4;
+        }
+      }
+    }
+  }
+  .rightBar {
+    padding-left: 20px;
+    h6 {
+      width: fit-content;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: var(--primary-color-);
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        color: var(--color-hover-);
+      }
+    }
+  }
+}

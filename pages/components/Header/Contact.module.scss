@@ -1,7 +1,10 @@
-$textColor: white;
+$textColor: var(--primary-color-);
 .container {
   padding: 5px;
-  color: $textColor;
+  color: var(--primary-color-);
+  background: white;
+  position: fixed;
+  z-index: 10;
   p {
     display: flex;
     font-size: 0.8rem;
@@ -25,8 +28,8 @@ $textColor: white;
         cursor: pointer;
         font-size: 1.1rem;
         &:hover {
-          color: $textColor;
-          background: #089dd2;
+          color: white;
+          background: var(--primary-color-);
         }
       }
       .socialMedia {
@@ -38,15 +41,15 @@ $textColor: white;
         &:hover {
           transform: rotate(360deg);
           &:nth-child(1) {
-            color: $textColor;
-            background: #089dd2;
+            color: white;
+            background: #eb2027;
           }
           &:nth-child(2) {
-            color: $textColor;
+            color: white;
             background: #eb2027;
           }
           &:nth-child(3) {
-            color: $textColor;
+            color: white;
             background: #eb2027;
           }
         }

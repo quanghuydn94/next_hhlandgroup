@@ -1,6 +1,7 @@
 .wrapper {
-  background: #eb2027;
-  color: white;
+  background: white;
+  color: var(--primary-color-);
+  border-top: 0.5px solid var(--primary-color-);
   .content {
     padding: 10px 0;
     display: flex;

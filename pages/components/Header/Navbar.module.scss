@@ -1,17 +1,21 @@
-$textColor: white;
+$textColor: var(--primary-color-);
 .container {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  padding: 5px;
-  overflow: hidden;
+  position: fixed;
+  top: 29px;
+  z-index: 10;
+  padding: 0 5px;
   transition: all 0.5s ease;
+  background: rgba(247, 247, 247, 0.8);
+  height: auto;
+  display: flex;
+  &:hover {
+    padding-bottom: 60px;
+  }
 
   .logo {
-    display: inline-block;
     img {
-      width: 100%;
-      height: 80px;
+      width: 100px;
+      height: 100%;
       cursor: pointer;
     }
   }
@@ -19,13 +23,14 @@ $textColor: white;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
     li {
       text-transform: uppercase;
       color: $textColor;
       position: relative;
       &:hover {
         background: transparent;
-        color: rgb(226, 217, 217);
+        color: var(--color-hover-);
       }
       &::after {
         transition: all 0.5s ease-in-out;
@@ -45,22 +50,19 @@ $textColor: white;
       }
     }
     .dropList {
-      transition: all 0.5s ease;
-      height: auto;
-      pointer-events: auto;
       position: relative;
       .dropdown {
         position: absolute;
         opacity: 0;
         display: flex;
+        bottom: -60px;
+        left: 0px;
+        transition: all 0.3s ease;
         width: 300px;
-        left: 20px;
-        transform: translateY(100%);
-        transition: all 0.5s ease;
         p {
           font-size: 0.8rem;
           margin-right: 5px;
-          color: white;
+          color: var(--primary-color-);
         }
       }
       &:hover {
@@ -70,7 +72,4 @@ $textColor: white;
       }
     }
   }
-}
-.container:hover {
-  padding-bottom: 50px;
 }

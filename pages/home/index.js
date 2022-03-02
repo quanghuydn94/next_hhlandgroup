@@ -3,7 +3,9 @@ import React from "react";
 function Home() {
   return (
     <>
-      <div>Home</div>
+      <div>
+        <div style={{ height: 1000 }}></div>
+      </div>
     </>
   );
 }

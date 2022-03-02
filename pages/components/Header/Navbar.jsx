@@ -5,11 +5,11 @@ import styles from "./Navbar.module.scss";
 
 function Navbar() {
   return (
-    <Grid container className={styles.container} justifyContent="space-between">
+    <Grid container className={styles.container} justifyContent="center">
       <Grid item xs={3} className={styles.logo}>
         <Link href="/">
           <img
-            src="https://hhlandgroup.com.vn/wp-content/uploads/2021/04/logo_hhland_new2.png"
+            src="https://img.freepik.com/free-vector/real-estate-logo-design-template-home-vector-icon-symbol-illustrations_22857-726.jpg"
             alt=""
           />
         </Link>
@@ -23,7 +23,7 @@ function Navbar() {
         </MenuItem>
         <div className={styles.dropList}>
           <MenuItem>
-            <Link href="/"> Dự án</Link>
+            <Link href="/project"> Dự án</Link>
           </MenuItem>
           <div className={styles.dropdown}>
             <Typography>Dự án đang triển khai</Typography>
@@ -31,7 +31,7 @@ function Navbar() {
           </div>
         </div>
         <MenuItem>
-          <Link href="/"> Tin tức</Link>
+          <Link href="/news"> Tin tức</Link>
         </MenuItem>
         <MenuItem>
           <Link href="/"> Tuyển dụng</Link>
