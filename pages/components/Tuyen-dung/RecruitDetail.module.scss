@@ -1,0 +1,81 @@
+.Recruit {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 200px;
+  .menu_left {
+    padding: 13.125px;
+    float: left;
+    width: 30%;
+    .title {
+      margin-top: 58px;
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 8px;
+      h2 {
+        margin: 0;
+        float: left;
+        color: #333;
+        font-size: 24px;
+        font-family: "gillsansregular";
+        text-transform: uppercase;
+        padding: 0 0 15px;
+        border-bottom: 2px solid #649913;
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        float: left;
+        width: 100%;
+        a {
+          cursor: pointer;
+          float: left;
+          width: 100%;
+          //   color: #666;
+          padding-top: 9px;
+          padding-bottom: 10px;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-family: "gillsansregular";
+          border-bottom: 1px solid #eee;
+          &:hover {
+            color: red;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    width: 70%;
+    float: right;
+    padding: 13.125px;
+    .news_other_item_bg {
+      margin-top: 10px;
+      a {
+        color: #649913;
+        font-size: 14px;
+        padding-left: 20px;
+        font-family: "gillsansregular";
+        text-transform: inherit;
+        line-height: 28px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAYUlEQVR42mP4//8/Ay78ztPTGYgdQWx8inKBOBWIWXAqBEpWA3ETshhMQhaI+aDsViBeC8TM2BQuBOIDQBwJxJeAWBokjk2hCBAfA+L/QOyGzTnI7ioB4uXYFGH1DP0UAgBdwhJBFmbPIAAAAABJRU5ErkJggg==)
+          no-repeat left 11px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .Recruit {
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu_left {
+    width: 100% !important;
+  }
+  .content {
+    width: 100% !important;
+  }
+}
