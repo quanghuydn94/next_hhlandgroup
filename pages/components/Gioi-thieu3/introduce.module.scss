@@ -55,7 +55,8 @@
       }
       .Staff {
         padding: 0 13.125px;
-        display: flex;
+        float: right;
+        width: 70%;
         .page_title {
           position: relative;
           color: #649913;

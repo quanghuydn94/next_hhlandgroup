@@ -34,7 +34,7 @@ function Navbar() {
           <Link href="/news"> Tin tức</Link>
         </MenuItem>
         <MenuItem>
-          <Link href="/"> Tuyển dụng</Link>
+          <Link href="/Tuyen-dung"> Tuyển dụng</Link>
         </MenuItem>
         <MenuItem>
           <Link href="/Lien-he"> Liên hệ</Link>
