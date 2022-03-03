@@ -19,7 +19,7 @@ function Navbar() {
           <Link href="/">Trang chủ</Link>
         </MenuItem>
         <MenuItem>
-          <Link href="/">Giới thiệu</Link>
+          <Link href="/Gioi-thieu">Giới thiệu</Link>
         </MenuItem>
         <div className={styles.dropList}>
           <MenuItem>
@@ -37,7 +37,7 @@ function Navbar() {
           <Link href="/"> Tuyển dụng</Link>
         </MenuItem>
         <MenuItem>
-          <Link href="/"> Liên hệ</Link>
+          <Link href="/Lien-he"> Liên hệ</Link>
         </MenuItem>
       </Grid>
     </Grid>
