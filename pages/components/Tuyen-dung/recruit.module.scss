@@ -1,7 +1,7 @@
 .Recruit {
   max-width: 1170px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 100px;
   .menu_left {
     padding: 13.125px;
     float: left;
@@ -20,7 +20,7 @@
         font-family: "gillsansregular";
         text-transform: uppercase;
         padding: 0 0 15px;
-        border-bottom: 2px solid #649913;
+        border-bottom: 2px solid var(--primary-color-);
       }
     }
     ul {
@@ -55,7 +55,7 @@
     .page_title {
       display: block;
       position: relative;
-      color: #649913;
+      color: var(--primary-color-);
       font-size: 26px;
       font-family: "gillsansregular";
       padding: 0 0 5px;
@@ -83,7 +83,7 @@
         a {
           float: left;
           width: 100%;
-          color: #649913;
+          color: var(--primary-color-);
           font-size: 16px;
           text-transform: uppercase;
           margin-top: 0;
