@@ -4,6 +4,7 @@ $textColor: var(--primary-color-);
   color: var(--primary-color-);
   background: white;
   position: fixed;
+  top: 0;
   z-index: 10;
   p {
     display: flex;
@@ -54,6 +55,21 @@ $textColor: var(--primary-color-);
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 960px) {
+}
+@media (max-width: 600px) {
+  .container {
+    
+    p {
+      font-size: 0.6rem;
     }
   }
 }

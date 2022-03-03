@@ -1,12 +1,15 @@
 import React from "react";
+import News from "./News";
+import Projects from "./Projects";
+import Slider from "./Slider";
 
 function Home() {
   return (
-    <>
       <div>
-        <div style={{ height: 1000 }}></div>
+        <Slider/>
+        <Projects/>
+        <News/>
       </div>
-    </>
   );
 }
 
