@@ -5,10 +5,7 @@ import styles from "./Footer.module.scss";
 function Infor() {
   return (
     <>
-      <img
-        src="https://img.freepik.com/free-vector/real-estate-logo-design-template-home-vector-icon-symbol-illustrations_22857-726.jpg"
-        alt=""
-      />
+      <img src="/logo/company.svg" alt="" />
       <div className={styles.items}>
         <Typography variant="h6">HLANDGROUP</Typography>
         <Typography variant="body2">

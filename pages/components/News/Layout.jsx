@@ -10,9 +10,9 @@ function LayoutNews({ children }) {
     <>
       <Banner />
       <Grid container justifyContent="center" className={styles.container}>
-        <Grid item xs={10}>
+        <Grid item md={10} sm={12} xs={12}>
           <Grid container>
-            <Grid item xs={3} className={styles.leftBar}>
+            <Grid item md={3} sm={4} className={styles.leftBar}>
               <div className={styles.listMenu}>
                 <MenuItem className={styles.item}>
                   <Link href="/news">Tin tức</Link>
@@ -20,7 +20,7 @@ function LayoutNews({ children }) {
                 </MenuItem>
               </div>
             </Grid>
-            <Grid item xs={9} className={styles.rightBar}>
+            <Grid item md={9} sm={8} xs={12} className={styles.rightBar}>
               {children}
             </Grid>
           </Grid>

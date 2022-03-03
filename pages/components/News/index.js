@@ -4,23 +4,16 @@ import React from "react";
 import CardItem from "../Card/CardItem";
 import LayoutNews from "./Layout";
 
-function NewsPage() {
+function NewsPage({ handleDetail }) {
   return (
     <LayoutNews>
       <Typography variant="h6">Tin tức</Typography>
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
+      {Array.from({ length: 5 }).map((item, index) => (
+        <CardItem key={index} handleDetail={handleDetail} />
+      ))}
       <Pagination
         color="primary"
-        count={10}
+        count={5}
         variant="outlined"
         shape="rounded"
       />

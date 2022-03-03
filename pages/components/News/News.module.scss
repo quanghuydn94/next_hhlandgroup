@@ -1,12 +1,11 @@
 .container {
-  top: 120px;
   padding: 40px 20px;
   .leftBar {
     padding-top: 53px;
     padding-right: 20px;
     .listMenu {
       position: sticky;
-      top: 100px;
+      top: 105px;
       .item {
         padding-left: 0;
         padding-right: 0;
@@ -37,6 +36,46 @@
       &:hover {
         color: var(--color-hover-);
       }
+    }
+  }
+}
+@media screen and(max-width: 960px) {
+  .container {
+    .leftBar {
+      padding-right: 50px;
+      .listMenu .item {
+        font-size: 0.8rem;
+      }
+    }
+    .rightBar {
+      padding-left: 0px;
+    }
+  }
+}
+@media screen and(max-width: 768px) {
+  .container {
+    .leftBar {
+      padding-right: 50px;
+      .listMenu .item {
+        font-size: 0.7rem;
+      }
+    }
+    .rightBar {
+      padding-left: 0px;
+    }
+  }
+}
+
+@media screen and(max-width: 600px) {
+  .container {
+    margin-top: 50px;
+    min-width: 600px;
+    .leftBar {
+      display: none;
+    }
+    .rightBar {
+      padding-left: 0px;
+      position: relative;
     }
   }
 }
