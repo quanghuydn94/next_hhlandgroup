@@ -6,12 +6,7 @@ function FormNews() {
     <>
       <form action="" className={styles.form}>
         <Typography variant="h6">Đăng ký nhận tin tức</Typography>
-        <TextField
-          color="secondary"
-          placeholder="Nhập email"
-          size="small"
-          fullWidth
-        />
+        <TextField placeholder="Nhập email" size="small" fullWidth />
         <Button fullWidth className={`${styles.button}  `}></Button>
       </form>
     </>

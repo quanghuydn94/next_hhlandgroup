@@ -8,10 +8,7 @@ function Navbar() {
     <Grid container className={styles.container} justifyContent="center">
       <Grid item xs={3} className={styles.logo}>
         <Link href="/">
-          <img
-            src="https://img.freepik.com/free-vector/real-estate-logo-design-template-home-vector-icon-symbol-illustrations_22857-726.jpg"
-            alt=""
-          />
+          <img src="/logo/company.svg" alt="" />
         </Link>
       </Grid>
       <Grid item xs={7} className={styles.menu}>
@@ -37,7 +34,7 @@ function Navbar() {
           <Link href="/"> Tuyển dụng</Link>
         </MenuItem>
         <MenuItem>
-          <Link href="/Lien-he"> Liên hệ</Link>
+          <Link href="/lien-he"> Liên hệ</Link>
         </MenuItem>
       </Grid>
     </Grid>

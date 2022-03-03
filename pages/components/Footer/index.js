@@ -13,7 +13,7 @@ function Footer() {
           <Grid item md={5} sm={12} xs={12} className={styles.infor}>
             <Infor />
           </Grid>
-          <Grid item md={3} sm={6} xs={12} className={styles.policy}>
+          <Grid item md={2} sm={6} xs={12} className={styles.policy}>
             <Policy />
           </Grid>
           <Grid item md={3} sm={6} xs={12} className={styles.getNews}>

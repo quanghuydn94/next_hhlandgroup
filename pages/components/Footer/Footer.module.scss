@@ -4,6 +4,8 @@ $textSizeCommon: 0.9rem;
   width: 100%;
   border-top: 0.5px solid var(--primary-color-);
   background: #fafafa;
+  bottom: 0;
+  clear: both;
   .container {
     color: var(--primary-color-);
     padding: 30px 0;
@@ -13,8 +15,8 @@ $textSizeCommon: 0.9rem;
       padding: 0 30px;
       margin-bottom: 30px;
       display: grid;
-      grid-template-columns: 150px auto;
-      grid-gap: 20px;
+      grid-template-columns: 130px auto;
+      grid-gap: 30px;
       img {
         width: 100%;
         height: auto;

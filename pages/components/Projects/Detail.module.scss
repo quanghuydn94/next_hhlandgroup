@@ -1,0 +1,49 @@
+.title {
+  h4 {
+    color: var(--primary-color-);
+    span {
+      margin-left: 10px;
+    }
+    a:hover {
+      color: var(--color-hover-);
+    }
+  }
+}
+.content {
+  .color,
+  h2,
+  h1 {
+    color: var(--primary-color-);
+  }
+}
+@media screen and(max-width: 960px) {
+  .title {
+    h4 {
+      font-size: 1.6rem;
+    }
+  }
+  .content {
+    h1,
+    h2 {
+      font-size: 1.2rem;
+    }
+    p,
+    li {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and(max-width: 600px) {
+  .title {
+    h4 {
+      font-size: 1.6rem;
+    }
+  }
+  .content {
+    h1,
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}

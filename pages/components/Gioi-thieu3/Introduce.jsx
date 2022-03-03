@@ -39,10 +39,7 @@ export default function Introduce() {
                 <h1>CÔNG TY TNHH BẤT ĐỘNG SẢN H&H LAND</h1>
                 <div className={styles.profile}>
                   <div className={styles.media_left}>
-                    <img
-                      src="https://dvt.vn/uploads/wp-content/uploads/2021/01/den-vau-6.jpg"
-                      alt=""
-                    />
+                    <img src=" " alt="Avatar" />
                   </div>
 
                   <div className={styles.media_body}>
