@@ -1,31 +1,18 @@
 $textColor: var(--primary-color-);
 .header {
   position: fixed;
-<<<<<<< HEAD
   top: 27px;
-  padding-bottom: 20px;
   z-index: 1000;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   transition: all 0.25s ease-in-out;
   .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-=======
-  top: 29px;
-  z-index: 10;
-  padding: 0 30px;
-  transition: all 0.5s ease;
-  background: rgba(247, 247, 247, 0.8);
-  height: auto;
-  display: flex;
-  &:hover {
-    padding-bottom: 60px;
-  }
->>>>>>> 53e58f07f38f214d86967c0cc7840bf272734e1e
+    max-width: 1242px;
+    margin: 0 auto;
 
     .logo {
       cursor: pointer;
@@ -61,12 +48,10 @@ $textColor: var(--primary-color-);
             background: transparent;
             color: var(--color-hover-);
           }
-          
         }
         &:hover .line {
           width: 50%;
           transition: all 0.25s ease-in-out;
-
         }
         .line {
           position: relative;
@@ -84,10 +69,9 @@ $textColor: var(--primary-color-);
         h4.active {
           color: var(--color-hover-);
         }
-        
       }
     }
-    
+
     .controls {
       display: none;
       flex-direction: row;
@@ -101,7 +85,6 @@ $textColor: var(--primary-color-);
         margin-top: 6px;
       }
     }
-    
   }
   .projectsList {
     list-style: none;
@@ -112,26 +95,22 @@ $textColor: var(--primary-color-);
     z-index: 1000;
     justify-content: flex-end;
     padding-right: 200px;
-    transform: scaleY(0); 
+    padding-bottom: 20px;
     transition: all 0.25s ease-in-out;
-    display: none;   
+    display: none;
     li {
       margin: 20px 10px 0px;
       cursor: pointer;
     }
   }
   .projectsList.active {
-    transform: scaleY(1);   
-    display: flex; 
-
+    display: flex;
   }
 }
-
 
 @media (max-width: 1920px) {
 }
 @media (max-width: 1280px) {
-  
 }
 @media (max-width: 960px) {
   .header {
@@ -147,7 +126,7 @@ $textColor: var(--primary-color-);
         }
       }
       .menu {
-      background-color: #fff;
+        background-color: #fff;
 
         display: flex;
         flex-direction: column;
@@ -155,7 +134,7 @@ $textColor: var(--primary-color-);
         transform: scaleY(0);
         top: 60px;
         width: 100%;
-        transition: all 0.25s ease-in-out ;
+        transition: all 0.25s ease-in-out;
         li {
           margin: 20px 10px 10px;
           cursor: pointer;
@@ -165,8 +144,8 @@ $textColor: var(--primary-color-);
               left: 0;
             }
           }
-          
-          .line.active { 
+
+          .line.active {
             width: 100%;
           }
         }
@@ -185,7 +164,6 @@ $textColor: var(--primary-color-);
         }
       }
     }
-    
   }
   .projectsList {
     list-style: none;
@@ -195,12 +173,10 @@ $textColor: var(--primary-color-);
     bottom: 0;
     width: 100%;
     justify-content: flex-end;
-    
   }
   .projectsList.active {
-    transform: scaleY(0);   
-    display: none !important; 
-
+    transform: scaleY(0);
+    display: none !important;
   }
 }
 @media (max-width: 600px) {
@@ -217,7 +193,7 @@ $textColor: var(--primary-color-);
         }
       }
       .menu {
-      background-color: #fff;
+        background-color: #fff;
 
         display: flex;
         flex-direction: column;
@@ -225,7 +201,7 @@ $textColor: var(--primary-color-);
         transform: scaleY(0);
         top: 60px;
         width: 100%;
-        transition: all 0.25s ease-in-out ;
+        transition: all 0.25s ease-in-out;
         li {
           margin: 20px 10px 10px;
           cursor: pointer;
@@ -235,8 +211,8 @@ $textColor: var(--primary-color-);
               left: 0;
             }
           }
-          
-          .line.active { 
+
+          .line.active {
             width: 100%;
           }
         }
@@ -255,7 +231,6 @@ $textColor: var(--primary-color-);
         }
       }
     }
-    
   }
   .projectsList {
     list-style: none;
@@ -264,13 +239,11 @@ $textColor: var(--primary-color-);
     flex-direction: row;
     bottom: 0;
     width: 100%;
-    transform: scaleY(0); 
+    transform: scaleY(0);
     justify-content: flex-end;
-    
   }
   .projectsList.active {
-    transform: scaleY(0);   
-    display: none !important; 
-
+    transform: scaleY(0);
+    display: none !important;
   }
 }

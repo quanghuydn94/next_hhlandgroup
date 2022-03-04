@@ -4,8 +4,8 @@ import NewsPage from "../components/News";
 
 function News() {
   const router = useRouter();
-  const handleDetail = () => {
-    router.push({ pathname: "/news/detail", query: 1 });
+  const handleDetail = (item) => {
+    router.push({ pathname: `/news/${item.title}`, query: item.id });
   };
   return (
     <>

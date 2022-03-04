@@ -1,8 +1,9 @@
 import React from "react";
 import LayoutNews from "./Layout";
 import styles from "./Detail.module.scss";
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import Link from "next/link";
+import { Visibility } from "@material-ui/icons";
 
 function Detail() {
   return (
@@ -168,10 +169,21 @@ function Detail() {
           quỹ đầu tư sẽ chuyển sang loại hình trú ẩn chủ yếu như bất động sản.
         </p>
       </div>
-      <div>
+      <div className={styles.relativeNews}>
+        <Typography variant="h5">Tin liên quan</Typography>
+        <div className={styles.linkNews}>
+          <a href="https://hhlandgroup.com.vn/chinh-phu-giao-thanh-pho-da-nang-dau-tu-cang-lien-chieu/">
+            CHÍNH PHỦ GIAO THÀNH PHỐ ĐÀ NẴNG ĐẦU TƯ CẢNG LIÊN CHIỂU
+          </a>
+          <a href="https://hhlandgroup.com.vn/cach-bat-mach-bong-bong-bat-dong-san-nam-2019/">
+            CÁCH “BẮT MẠCH” BONG BÓNG BẤT ĐỘNG SẢN NĂM 2019
+          </a>
+        </div>
+      </div>
+      <div className={styles.anotherNews}>
         <Typography variant="h5">Các tin khác</Typography>
 
-        <div>
+        <div className={styles.linkNews}>
           <a href="https://hhlandgroup.com.vn/chinh-phu-giao-thanh-pho-da-nang-dau-tu-cang-lien-chieu/">
             CHÍNH PHỦ GIAO THÀNH PHỐ ĐÀ NẴNG ĐẦU TƯ CẢNG LIÊN CHIỂU
           </a>
@@ -217,7 +229,10 @@ function Detail() {
             Co-living và Co-working đang là mảng ăn tiền lớn tại Việt Nam
           </a>
         </div>
-        <a class="other_new_readmore_btn">Xem thêm</a>
+        <div className={styles.button}>
+          <Visibility />
+          <Button>Xem thêm</Button>
+        </div>
       </div>
     </LayoutNews>
   );
