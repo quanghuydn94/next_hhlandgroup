@@ -10,7 +10,7 @@ export default function RecruitDetail() {
           <h2>Giới thiệu</h2>
         </div>
         <ul>
-          <li style={{ color: "#649913" }}>
+          <li style={{ color: "var(--primary-color-)" }}>
             <Link href="/">Tin Tuyển dụng</Link>
           </li>
           <li style={{ color: "#666" }}>
@@ -93,18 +93,7 @@ export default function RecruitDetail() {
         </div>
         <div className={styles.page_other}>
           <div className={styles.page_other_about}>
-            <div
-              className={styles.page_other_about1}
-              style={{
-                float: "left",
-                color: "#333",
-                fontSize: "20px",
-                padding: "0 0 10px",
-                borderBottom: "2px solid #649913",
-              }}
-            >
-              Các tin khác
-            </div>
+            <div className={styles.page_other_about1}>Các tin khác</div>
           </div>
           <div className={styles.news_other_item_bg}>
             <p>

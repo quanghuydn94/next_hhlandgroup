@@ -1,11 +1,11 @@
 import React from "react";
-import Recruit from "../components/Tuyen-dung/Recruit";
 import RecruitDetail from "../components/Tuyen-dung/RecruitDetail";
-
-export default function index() {
+import { useRouter } from "next/dist/client/router";
+export default function RecruitmentDetail() {
+  const router = useRouter();
+  console.log(router);
   return (
     <div>
-      {/* <Recruit /> */}
       <RecruitDetail />
     </div>
   );

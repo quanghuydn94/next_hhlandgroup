@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./recruit.module.scss";
 
-export default function Recruit() {
+export default function Recruit({ handleDetail }) {
   return (
     <div className={styles.Recruit}>
       <div className={styles.menu_left}>
@@ -21,17 +21,19 @@ export default function Recruit() {
       <div className={styles.content}>
         <div className={styles.page_title}>Tuyển Dụng</div>
         {Array.from({ length: 4 }).map((item, index) => (
-          <div key={index} className={styles.project_item_bg}>
+          <div
+            key={index}
+            className={styles.project_item_bg}
+            onClick={handleDetail}
+          >
             <div className={styles.img_desc}>
-              <Link href="/">
-                <img
-                  src="https://hhlandgroup.com.vn/wp-content/uploads/2021/07/TD-QN-300x251.jpg"
-                  alt=""
-                />
-              </Link>
+              <img
+                src="https://hhlandgroup.com.vn/wp-content/uploads/2021/07/TD-QN-300x251.jpg"
+                alt=""
+              />
             </div>
             <div className={styles.project_info}>
-              <Link href="/">
+              <Link href="/Tuyen-dung/detail">
                 H&H LAND GROUP TUYỂN DỤNG THÁNG 7/2021 – CN QUẢNG NGÃI
               </Link>
               <div className={styles.split_bar_project}></div>

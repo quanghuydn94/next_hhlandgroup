@@ -1,7 +1,8 @@
 .Recruit {
   max-width: 1170px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 150px;
+  margin-bottom: 50px;
   .menu_left {
     padding: 13.125px;
     float: left;
@@ -20,7 +21,7 @@
         font-family: "gillsansregular";
         text-transform: uppercase;
         padding: 0 0 15px;
-        border-bottom: 2px solid #649913;
+        border-bottom: 2px solid var(--primary-color-);
       }
     }
     ul {
@@ -33,7 +34,6 @@
           cursor: pointer;
           float: left;
           width: 100%;
-          //   color: #666;
           padding-top: 9px;
           padding-bottom: 10px;
           font-size: 12px;
@@ -54,7 +54,7 @@
     padding: 13.125px;
     .page_title {
       position: relative;
-      color: #649913;
+      color: var(--primary-color-);
       font-size: 26px;
       font-family: "gillsansregular";
       padding: 0 0 5px;
@@ -99,7 +99,7 @@
           color: #333;
           font-size: 20px;
           padding: 0 0 10px;
-          border-bottom: 2px solid #649913;
+          border-bottom: 2px solid var(--primary-color-);
         }
       }
       .news_other_item_bg {
@@ -107,7 +107,7 @@
         p {
           margin: 0;
           a {
-            color: #649913;
+            color: var(--primary-color-);
             font-size: 14px;
             padding-left: 20px;
             font-family: "gillsansregular";

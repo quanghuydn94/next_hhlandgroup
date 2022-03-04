@@ -95,7 +95,9 @@ function Navbar() {
                   <a>
                     <h4
                       className={clsx(styles.menuItem, {
-                        [styles.active]: router.asPath == item.link,
+                        [styles.active]:
+                          router.asPath == item.link ||
+                          router.route == item.link + "/[...slug]",
                       })}
                     >
                       {item.title}
@@ -104,7 +106,9 @@ function Navbar() {
                 </Link>
                 <div
                   className={clsx(styles.line, {
-                    [styles.active]: router.asPath == item.link,
+                    [styles.active]:
+                      router.asPath == item.link ||
+                      router.route == item.link + "/[...slug]",
                   })}
                 ></div>
               </li>
