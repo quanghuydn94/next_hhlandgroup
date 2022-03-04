@@ -20,36 +20,13 @@ export default function RecruitDetail() {
       </div>
       <div className={styles.content}>
         <div className={styles.page_title}>Tuyển Dụng</div>
-        <div>
-          <div
-            style={{
-              fontWeight: "400px",
-              color: "black",
-              lineHeight: 1.7,
-              padding: "10px",
-              fontSize: "14px",
-              marginTop: "-5px",
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "22px",
-                fontWeight: "400",
-                marginBottom: "15px",
-              }}
-            >
+        <div className={styles.page_content}>
+          <div className={styles.page_contentDetail}>
+            <h2>
               CHƯƠNG TRÌNH TUYỂN DỤNG LỚN NHẤT NĂM 2021 CỦA H&H LAND GROUP TẠI
               ĐÀ NẴNG
             </h2>
-            <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: "400",
-                marginBottom: "15px",
-              }}
-            >
-              Tuyển dụng mảng Kinh doanh dự án:
-            </h3>
+            <h3>Tuyển dụng mảng Kinh doanh dự án:</h3>
 
             <div>– 01 Trưởng phòng Kinh doanh</div>
             <div>– 20 Sale chuyên bán dự án</div>
@@ -60,25 +37,8 @@ export default function RecruitDetail() {
               width="100%"
             />
           </div>
-          <h3
-            style={{
-              fontSize: "20px",
-              fontWeight: "400",
-              marginBottom: "15px",
-            }}
-          >
-            Tuyển dụng mảng Kinh doanh Thuê & Cho thuê:
-          </h3>
-          <div
-            style={{
-              fontWeight: "400px",
-              color: "black",
-              lineHeight: 1.7,
-              padding: "10px",
-              fontSize: "14px",
-              marginTop: "-5px",
-            }}
-          >
+          <h3>Tuyển dụng mảng Kinh doanh Thuê & Cho thuê:</h3>
+          <div className={styles.page_contentDetail}>
             <div>– 01 Trưởng phòng Kinh doanh</div>
             <div>– 10 Sale mảng thuê và cho thuê</div>
           </div>
@@ -88,16 +48,7 @@ export default function RecruitDetail() {
               width="100%"
             />
           </div>
-          <div
-            style={{
-              fontWeight: "400px",
-              color: "black",
-              lineHeight: 1.7,
-              padding: "10px",
-              fontSize: "14px",
-              marginTop: "-5px",
-            }}
-          >
+          <div className={styles.page_contentDetail}>
             <div>
               TRỞ THÀNH CHIẾN BINH SALE CỦA H&H LAND GROUP bạn sẽ được gì?
             </div>
@@ -120,16 +71,7 @@ export default function RecruitDetail() {
               viên nữ, con em của nhân viên.
             </div>
           </div>
-          <div
-            style={{
-              fontWeight: "400px",
-              color: "black",
-              lineHeight: 1.7,
-              padding: "10px",
-              fontSize: "14px",
-              marginTop: "-5px",
-            }}
-          >
+          <div className={styles.page_contentDetail}>
             <div>BẠN CẦN NHỮNG GÌ?</div>
             <div>
               – Ưu tiên ứng viên đã có kinh nghiệm, chưa có kinh nghiệm sẽ được
@@ -139,16 +81,7 @@ export default function RecruitDetail() {
             <div>– Có khả năng học hỏi nhanh, nhiệt tình với công việc.</div>
             <div>– Có Laptop và phương tiện đi lại</div>
           </div>
-          <div
-            style={{
-              fontWeight: "400px",
-              color: "#000",
-              lineHeight: 1.7,
-              padding: "10px",
-              fontSize: "14px",
-              marginTop: "-5px",
-            }}
-          >
+          <div className={styles.page_contentDetail}>
             <div>NỘP HỒ SƠ/CV TRỰC TIẾP VỀ ĐỊA CHỈ:</div>
             <div>
               – Tòa nhà H&H TOWER 382 Nguyễn Hữu Thọ, P. Khuê Trung, Q. Cẩm Lệ,
@@ -158,16 +91,10 @@ export default function RecruitDetail() {
             <div>– Hotline: 0357988138 – Ms Nguyên</div>
           </div>
         </div>
-        <div style={{ marginTop: "52px" }}>
-          <div
-            style={{
-              float: "left",
-              width: "100%",
-              borderBottom: "1px solid #eee",
-              marginBottom: "8px",
-            }}
-          >
+        <div className={styles.page_other}>
+          <div className={styles.page_other_about}>
             <div
+              className={styles.page_other_about1}
               style={{
                 float: "left",
                 color: "#333",
@@ -179,10 +106,17 @@ export default function RecruitDetail() {
               Các tin khác
             </div>
           </div>
-          <div div={styles.news_other_item_bg}>
-            <Link href="/">
-              H&H LAND GROUP TUYỂN DỤNG THÁNG 7/2021 – CN QUẢNG NGÃI
-            </Link>
+          <div className={styles.news_other_item_bg}>
+            <p>
+              <Link href="/">
+                H&H LAND GROUP TUYỂN DỤNG THÁNG 7/2021 – CN QUẢNG NGÃI
+              </Link>
+            </p>
+            <p>
+              <Link href="/">
+                H&H LAND GROUP TUYỂN DỤNG THÁNG 7/2021 – CN QUẢNG NGÃI
+              </Link>
+            </p>
           </div>
         </div>
       </div>
