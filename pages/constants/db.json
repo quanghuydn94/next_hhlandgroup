@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2021/11/20190812093013-8653-300x169.jpg",
+        "title": "NGHĨA HÀNH NEW CENTER",
+        "address": "Điện Nam Trung, Điện Bàn, Quảng Nam",
+        "description": " Khu đô thị Nghĩa Hành New Center là dự án đất nền tọa lạc tại trung tâm Thị trấn Chợ Chùa. Sở hữu hơn 1km mặt tiền đường Phạm Văn Đồng"
+    },
+    {
+        "id": "2",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2021/11/Phoi-canh-300x178.png",
+        "title": "KHU PHỐ CHỢ ĐIỆN NAM TRUNG",
+        "address": "Điện Nam Trung, Điện Bàn, Quảng Nam",
+        "description": " Khu phố chợ Điện Nam Trung là dự án đất nền nằm trên Tỉnh lộ 607A, ngay trung tâm Chợ Điện Nam Trung - huyện Điện Bàn, tỉnh Quảng Nam"
+    },
+    {
+        "id": "3",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2021/05/Slide-web-300x139.jpg",
+        "title": "DỰ ÁN SHIAMOND CITY – QUẢNG NGÃI",
+        "address": "Thị trấn Chợ Chùa, Nghĩa Hành, Quảng Ngãi",
+        "description": " Dự án Shiamond City là dự án đất nền, shophouse tọa lạc tại trung tâm thị trấn Chợ Chùa. Nằm trên trục đường DT624, thị trấn Chợ Chùa, huyện Nghĩa Hành, tỉnh Quảng Ngãi, gần cụm công nghiệp – làng…"
+    },
+    {
+        "id": "4",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2021/04/du-an-biet-thu-can-ho-shantira-beach-resort-and-spa-hoi-an-17-300x200.jpg",
+        "title": "SHANTIRA BEACH RESORT & SPA",
+        "address": "đường Lạc Long Quân, Điện Dương, Điện Bàn, Quảng Nam",
+        "description": " Shantira Beach Resort & Spa Hội An (Hội An Royal Beach Resort)- dự án biệt thự biển & condotel mới nhất của tập đoàn Royal Hội An có tổng vốn đầu tư 1900 tỷ đồng chuẩn bị được công bố…"
+    },
+    {
+        "id": "5",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2021/04/465x333ra-mat-du-an-cantavil-eu-lam-chu-xu-huong-bat-dong-san-cong-nghiep-mien-tru-1594899052-1.jpg",
+        "title": "The Điện Nam Village",
+        "address": "Điện Nam Trung, Điện Bàn, Quảng Nam",
+        "description": " Toạ lạc ngay trung tâm phường Điện Nam – thị xã Điện Bàn – Tỉnh Quảng Nam, The Điện Nam Village là một dự án đô thị trung tâm với vị trí trọng điểm mang tính chiến lược trong khớp…"
+    },
+    {
+        "id": "6",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2021/04/du-an-meyhomes-capital3-300x190.jpg",
+        "title": "MEYHOMES CAPITAL PHÚ QUỐC",
+        "address": "Bãi Trường, Thị trấn An Thới, Phú Quốc, Kiên Giang",
+        "description": " Meyhomes Capital Phú Quốc ra đời thu hút đông đảo du khách với hàng loạt các trải nghiệm độc đáo cho một kỳ nghỉ sắc màu tại nơi thiên đường nhiệt đới với nét đẹp từ thiên nhiên, văn hóa…"
+    },
+    {
+        "id": "7",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2021/04/khu-do-thi-rosa-riverside-hoi-an-300x168.jpg",
+        "title": "ROSA RIVERSIDE COMPLEX",
+        "address": "Điện Dương, Điện Bàn, Quảng Nam",
+        "description": " Rosa Riverside Complex (Khu đô thị Đại Dương Xanh – River View) là dự án đất nền ven sông Cổ Cò, thuộc đô thị mới Điện Nam – Điện Ngọc với tổng quy mô hơn 34 hecta"
+    },
+    {
+        "id": "8",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2021/04/mallorca-river-city-2020-300x169.jpg",
+        "title": "Mallorca River City",
+        "address": "Điện Dương, Điện Bàn, Quảng Nam",
+        "description": " Dự án Mallorca River City (Khu đô thị An Phú – Phú Quý) là dự án đất nền được đón chờ nhất giai đoạn nửa sau năm 2020, sở hữu hơn 650m chiều dài dọc dòng sông Cổ Cò thơ mộng…"
+    },
+    {
+        "id": "9",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2020/07/2-1-300x183.jpg",
+        "title": "Dự án Epic Town Điện Thắng | Điểm Nhấn Đầu Tư",
+        "address": "Điện Thắng, Điện Bàn, Quảng Nam",
+        "description": " Dự án Epic Town Điện Thắng  nằm ở 1 vị trí được gọi là “kim cương mới” hiện nay,  là một trong những dự án lớn tại Điện Bàn và đang được khách hàng đặc biệt quan tâm."
+    },
+    {
+        "id": "10",
+        "image": "https://hhlandgroup.com.vn/wp-content/uploads/2020/05/df7642dd05e4ffbaa6f5-300x200.jpg",
+        "title": "Nam Hội AN City Khu Đô Thị Ven Sông",
+        "address": "Cầu Cửa Đại, Hội An",
+        "description": " Dự án Nam Hội An City là dự án duy nhất có vị trí tuyệt đẹp nằm ven sông Thu Bồn, thuộc phía Nam chân cầu Cửa Đại, xã Duy Nghĩa, huyện Duy Xuyên, tỉnh Quảng Nam. Đặc biệt, dự án…"
+    }
+]
