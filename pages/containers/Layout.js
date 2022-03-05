@@ -7,30 +7,22 @@ import { KeyboardArrowUp } from "@material-ui/icons";
 import CallButton from "../components/CallButton";
 import { useWindowScroll } from "react-use";
 
-
 const Layout = ({ children, props }) => {
   const refDom = useRef(null);
-  const {y: pageYOffset} = useWindowScroll()
-  const [isHideContact, setIsHideContact] = useState(false)
+  const { y: pageYOffset } = useWindowScroll();
+  const [isHideContact, setIsHideContact] = useState(false);
 
   useEffect(() => {
     if (pageYOffset > 100) {
-      setIsHideContact(true)
+      setIsHideContact(true);
     } else {
-      setIsHideContact(false)
+      setIsHideContact(false);
     }
-}, [pageYOffset])
-  useEffect(()=> {
-    setTimeout(()=>{
-      if(pageYOffset === 0)  {
-        window.scrollTo({top: 200, behavior: 'smooth'});
+  }, [pageYOffset]);
 
-      }
-    }, 2000)
-  }, [pageYOffset])
   return (
     <>
-      <Header isHideContact={isHideContact}/>
+      <Header isHideContact={isHideContact} />
       <div id="back-to-top-anchor" ref={refDom}></div>
       {children}
       <ScrollTop {...props}>
