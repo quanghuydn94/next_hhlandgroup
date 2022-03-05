@@ -1,191 +1,164 @@
-.news {
-    padding: 20px 100px;
+.root {
+  background-color: rgba(226, 219, 219, 0.2);
+  margin-top: 40px;
+  .news {
+    padding: 20px 40px;
+    max-width: 1242px;
+    margin: 0 auto;
     h2 {
-        color: var(--primary-color-);
-        border-bottom: 3px solid var(--primary-color-);
+      color: var(--primary-color-);
+      border-bottom: 3px solid var(--primary-color-);
     }
     .item {
-        padding: 2px;
-        .wrapper {
-            border: 2px solid gray;
-            cursor: pointer;
-            padding: 6px;
+      padding: 4px;
+      .wrapper {
+        border-top: none;
+        cursor: pointer;
+        border-radius: 6px;
+        box-shadow: 4px 4px 4px rgba(226, 219, 219, 0.3);
+        transition: all 0.25s ease-in-out;
+        &:hover {
+          border-color: var(--primary-color-);
+        }
+        .image {
+          width: 100%;
+          display: flex;
+          position: relative;
+          overflow: hidden;
+          border-radius: 6px;
+  
+          img {
             border-radius: 6px;
+            width: 100%;
+            margin: auto;
             transition: all 0.25s ease-in-out;
             &:hover {
-                border-color: var(--primary-color-);
+              transform: scale(1.1);
             }
-            .image {
-                width: 100%;
-                display: flex;
-                position: relative;
-                overflow: hidden;
-                border-radius: 6px;
-
-                img {
-                    border-radius: 6px;
-                    width: 100%;
-                    margin: auto;
-                    transition: all 0.25s ease-in-out;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
-                h3 {
-                    position: absolute;
-                    bottom: 0;
-                    font-size: 16px;
-
-                    height: 45px;
-                    padding: 10px;
-                    text-align: center;
-                    margin: 0;
-                    left: 0;
-                    width: 100%;
-                    color: #fff;
-                    background-color: rgba(192, 17, 17, 0.5);
-                }
-            }
-            p {
-                height: 48px;
-                overflow: hidden;
-                padding: 6px;
-            }
+          }
+          h3 {
+            position: absolute;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            bottom: 0;
+            font-size: 12px;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            background-color: rgb(255 20 20 / 75%);
+          }
         }
-        
+      }
     }
     .end {
-        margin-top: 10px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: var(--primary-color-);
-        cursor: pointer;
-        h5 {
-            &:hover {
-                opacity: 0.5;
-            }
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--primary-color-);
+      cursor: pointer;
+      h5 {
+        transition: all 0.25s ease-in-out;
+        &:hover {
+          opacity: 0.5;
+          transform: translateY(-4px);
         }
-        .line {
-            content: "";
-            width:  95%;
-            height: 1px;
-            background-color: var(--primary-color-);
-        }
+      }
+      .line {
+        content: "";
+        width: calc(100% - 75px);
+        height: 1px;
+        background-color: var(--primary-color-);
+      }
     }
+  }
 }
 @media (max-width: 1920px) {
-
 }
 @media (max-width: 1280px) {
+  .root {
+
     .news {
-        padding: 20px 20px;
-        h2 {
-            
-        }
-        .item {
-            .wrapper {
-               
-                .image {
-                    
-    
-                    img {
-                        
-                    }
-                    h3 {
-                        
-                    }
-                }
-                p {
-                    
-                }
+      padding: 20px 20px;
+      h2 {
+      }
+      .item {
+        .wrapper {
+          .image {
+            img {
             }
-            
-        }
-        .end {
-            
-    
-            h5 {
-               
+            h3 {
             }
-            .line {
-                width: 80%;
-            }
+          }
+          p {
+          }
         }
+      }
+      .end {
+        h5 {
+        }
+        .line {
+        }
+      }
     }
+  }
 }
 @media (max-width: 960px) {
+  .root {
+
     .news {
-        padding: 20px 20px;
-        h2 {
-            
-        }
-        .item {
-            .wrapper {
-               
-                .image {
-                    
-    
-                    img {
-                        
-                    }
-                    h3 {
-                        
-                    }
-                }
-                p {
-                    
-                }
+      padding: 20px 20px;
+      h2 {
+      }
+      .item {
+        .wrapper {
+          .image {
+            img {
             }
-            
-        }
-        .end {
-            
-    
-            h5 {
-               
+            h3 {
             }
-            .line {
-                width: 90%;
-            }
+          }
+          p {
+          }
         }
+      }
+      .end {
+        h5 {
+        }
+        .line {
+        }
+      }
     }
+  }
 }
 @media (max-width: 600px) {
+  .root {
+
     .news {
-        padding: 20px 20px;
-        h2 {
-            
-        }
-        .item {
-            .wrapper {
-               
-                .image {
-                    
-    
-                    img {
-                        
-                    }
-                    h3 {
-                        
-                    }
-                }
-                p {
-                    
-                }
+      padding: 20px 20px;
+      h2 {
+      }
+      .item {
+        .wrapper {
+          .image {
+            img {
             }
-            
-        }
-        .end {
-            
-    
-            h5 {
-               
+            h3 {
             }
-            .line {
-                width: 80%;
-            }
+          }
+          p {
+          }
         }
+      }
+      .end {
+        h5 {
+        }
+        .line {
+        }
+      }
     }
+  }
 }

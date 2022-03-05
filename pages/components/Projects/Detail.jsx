@@ -1,8 +1,9 @@
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import Link from "next/link";
 import React from "react";
 import LayoutProject from "./Layout";
 import styles from "./Detail.module.scss";
+import { Visibility } from "@material-ui/icons";
 function Detail() {
   return (
     <LayoutProject>
@@ -199,6 +200,71 @@ function Detail() {
             />
           </noscript>
         </p>
+      </div>
+      <div className={styles.relativeNews}>
+        <Typography variant="h5">Tin liên quan</Typography>
+        <div className={styles.linkNews}>
+          <a href="https://hhlandgroup.com.vn/chinh-phu-giao-thanh-pho-da-nang-dau-tu-cang-lien-chieu/">
+            CHÍNH PHỦ GIAO THÀNH PHỐ ĐÀ NẴNG ĐẦU TƯ CẢNG LIÊN CHIỂU
+          </a>
+          <a href="https://hhlandgroup.com.vn/cach-bat-mach-bong-bong-bat-dong-san-nam-2019/">
+            CÁCH “BẮT MẠCH” BONG BÓNG BẤT ĐỘNG SẢN NĂM 2019
+          </a>
+        </div>
+      </div>
+      <div className={styles.anotherNews}>
+        <Typography variant="h5">Các tin khác</Typography>
+
+        <div className={styles.linkNews}>
+          <a href="https://hhlandgroup.com.vn/chinh-phu-giao-thanh-pho-da-nang-dau-tu-cang-lien-chieu/">
+            CHÍNH PHỦ GIAO THÀNH PHỐ ĐÀ NẴNG ĐẦU TƯ CẢNG LIÊN CHIỂU
+          </a>
+          <a href="https://hhlandgroup.com.vn/cach-bat-mach-bong-bong-bat-dong-san-nam-2019/">
+            CÁCH “BẮT MẠCH” BONG BÓNG BẤT ĐỘNG SẢN NĂM 2019
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/thua-dat-co-nhieu-nguoi-so-huu-cap-so-do-nhu-the-nao/">
+            Thửa đất có nhiều người sở hữu, cấp sổ đỏ như thế nào?
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/chuyen-gia-binh-chon-10-su-kien-bat-dong-san-tieu-bieu-nam-2018/">
+            Chuyên gia bình chọn 10 sự kiện bất động sản tiêu biểu năm 2018
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/da-nang-sau-con-lut-lich-su-nhieu-chuyen-bi-hai/">
+            ĐÀ NẴNG SAU CƠN LỤT LỊCH SỬ – NHIỀU CHUYỆN BI HÀI
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/bat-dong-san-nghi-duong-ven-bien-van-la-kenh-dau-tu-hieu-qua/">
+            Bất động sản nghỉ dưỡng ven biển vẫn là kênh đầu tư hiệu quả
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/phan-khuc-shophouse-dang-len-ngoi-loi-khuyen-nao-cho-nguoi-mua-nha/">
+            Phân khúc shophouse đang lên ngôi, lời khuyên nào cho người mua nhà?
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/xu-huong-dich-chuyen-dan-cu-da-nang/">
+            XU HƯỚNG DỊCH CHUYỂN DÂN CƯ ĐÀ NẴNG
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/khoi-thong-song-co-co-khoi-thong-diem-nghen-lien-ket-du-lich-da-nang-hoi-an/">
+            KHƠI THÔNG SÔNG CỔ CÒ – KHƠI THÔNG “ĐIỂM NGHẼN” LIÊN KẾT DU LỊCH ĐÀ
+            NẴNG – HỘI AN
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/da-nang-dau-tu-2-du-an-ham-chui-tai-nut-giao-thong-phia-tay-cau-rong/">
+            Đà Nẵng: Đầu tư 2 dự án hầm chui tại nút giao thông phía tây cầu
+            Rồng
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/co-living-va-co-working-dang-la-mang-an-tien-lon-tai-viet-nam/">
+            Co-living và Co-working đang là mảng ăn tiền lớn tại Việt Nam
+          </a>
+        </div>
+        <div className={styles.button}>
+          <Visibility />
+          <Button>Xem thêm</Button>
+        </div>
       </div>
     </LayoutProject>
   );

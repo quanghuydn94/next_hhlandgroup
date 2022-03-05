@@ -19,7 +19,7 @@ function Contact() {
           <Typography variant="h2">Liên Hệ</Typography>
           <div className={styles.page_content_detail}>
             <Typography>
-              <span>Công ty TNHH Bất động sản H&H Land</span>
+              <span>Công ty TNHH An Vạn Tín</span>
             </Typography>
             <Typography>
               <strong>Trụ sở : </strong>H&H Tower, 382 Nguyễn Hữu Thọ, Khuê

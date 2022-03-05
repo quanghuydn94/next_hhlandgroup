@@ -1,0 +1,139 @@
+.Recruit {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  .menu_left {
+    padding: 13.125px;
+    float: left;
+    width: 30%;
+    .title {
+      margin-top: 58px;
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 8px;
+      h2 {
+        margin: 0;
+        float: left;
+        color: #333;
+        font-size: 24px;
+        font-family: "gillsansregular";
+        text-transform: uppercase;
+        padding: 0 0 15px;
+        border-bottom: 2px solid var(--primary-color-);
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        float: left;
+        width: 100%;
+        a {
+          cursor: pointer;
+          float: left;
+          width: 100%;
+          padding-top: 9px;
+          padding-bottom: 10px;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-family: "gillsansregular";
+          border-bottom: 1px solid #eee;
+          &:hover {
+            color: red;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    width: 70%;
+    float: right;
+    padding: 13.125px;
+    .page_title {
+      position: relative;
+      color: var(--primary-color-);
+      font-size: 26px;
+      font-family: "gillsansregular";
+      padding: 0 0 5px;
+      text-shadow: 0 0 1px rgb(0 102 178 / 30%);
+      text-transform: uppercase;
+      line-height: 30px;
+    }
+    .page_content {
+      .page_contentDetail {
+        font-weight: 400px;
+        color: black;
+        line-height: 1.7;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: -5px;
+        h2 {
+          font-size: 22px;
+          font-weight: 400;
+          margin-bottom: 15px;
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 15px;
+        }
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+    }
+    .page_other {
+      margin-top: 52px;
+      .page_other_about {
+        float: left;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 8px;
+        .page_other_about1 {
+          float: left;
+          color: #333;
+          font-size: 20px;
+          padding: 0 0 10px;
+          border-bottom: 2px solid var(--primary-color-);
+        }
+      }
+      .news_other_item_bg {
+        margin-top: 10px;
+        p {
+          margin: 0;
+          a {
+            color: var(--primary-color-);
+            font-size: 14px;
+            padding-left: 20px;
+            font-family: "gillsansregular";
+            text-transform: inherit;
+            line-height: 28px;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAYUlEQVR42mP4//8/Ay78ztPTGYgdQWx8inKBOBWIWXAqBEpWA3ETshhMQhaI+aDsViBeC8TM2BQuBOIDQBwJxJeAWBokjk2hCBAfA+L/QOyGzTnI7ioB4uXYFGH1DP0UAgBdwhJBFmbPIAAAAABJRU5ErkJggg==")
+              no-repeat left 11px;
+            &:hover {
+              margin-left: 15px;
+              transition: all 0.3s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .Recruit {
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu_left {
+    width: 100% !important;
+  }
+  .content {
+    width: 100% !important;
+  }
+}

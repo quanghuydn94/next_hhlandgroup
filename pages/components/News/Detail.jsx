@@ -1,8 +1,9 @@
 import React from "react";
 import LayoutNews from "./Layout";
 import styles from "./Detail.module.scss";
-import { Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import Link from "next/link";
+import { Visibility } from "@material-ui/icons";
 
 function Detail() {
   return (
@@ -74,9 +75,7 @@ function Detail() {
             />
           </noscript>
         </figure>
-        <h3 id="h-1-giai-o-n-ph-c-h-i-giai-o-n-i-l-n">
-          1. Giai đoạn Phục hồi (Giai đoạn đi lên)
-        </h3>
+        <h3>1. Giai đoạn Phục hồi (Giai đoạn đi lên)</h3>
         <p>
           Giai đoạn này nhà đầu tư bắt đầu cảm thấy tin tưởng hơn về thị trường,
           giá lúc này tăng nhẹ trở lại. Ngân hàng bắt đầu giảm lãi suất và cho
@@ -90,7 +89,7 @@ function Detail() {
           điểm an toàn và rất thích hợp cho các nhà đầu tư tham gia vào thị
           trường bất động sản.
         </p>
-        <h3 id="h-2-giai-o-n-t-ng-tr-ng">2. Giai đoạn tăng trưởng</h3>
+        <h3>2. Giai đoạn tăng trưởng</h3>
         <p>
           Giá bắt đầu tăng mạnh, lúc này nhu cầu mua bất động sản rất phổ biến,
           các bất động sản được giao dịch với khối lượng cao, các sàn giao dịch,
@@ -105,9 +104,7 @@ function Detail() {
           chóng và sôi động. Đây là thời điểm phù hợp cho các nhà đầu tư chào
           bán bất động sản của mình đã mua từ giai đoạn trước.
         </p>
-        <h3 id="h-3-giai-o-n-bong-b-ng-giai-o-n-th-tr-ng-t-nh-i-m">
-          3 Giai đoạn bong bóng (giai đoạn thị trường đạt đỉnh điểm)
-        </h3>
+        <h3>3 Giai đoạn bong bóng (giai đoạn thị trường đạt đỉnh điểm)</h3>
         <p>
           Thời điểm này các công trình xây dựng bị quá tải và giá quá cao, tỉ lệ
           đầu cơ lúc này cực cao. Lúc này do tỉ lệ đầu cơ quá cao khiến giá bất
@@ -118,7 +115,7 @@ function Detail() {
           Thị trường lúc này bắt đầu nhen nhóm sự suy giảm. Các nhà đầu tư mua
           thời điểm này nghĩa là họ đã mua ở giá cao nhất của chu kì.
         </p>
-        <h3 id="h-4-giai-o-n-suy-tho-i">4. Giai đoạn suy thoái</h3>
+        <h3>4. Giai đoạn suy thoái</h3>
         <p>
           Thị trường bất động sản hạ nhiệt, nhiều nhà đầu tư rút khỏi thị
           trường, nhà đất trở nên khó bán, giao dịch đình trệ.&nbsp; Ngân hàng
@@ -130,7 +127,7 @@ function Detail() {
           dốc không phanh, tài sản bị tịch thu để thế nợ tràn ngập thị trường,
           người mua không dám mua bất động sản, gây ra sự tồn đọng.
         </p>
-        <h3 id="h-5-giai-o-n-ng-b-ng">5. Giai đoạn đóng băng</h3>
+        <h3>5. Giai đoạn đóng băng</h3>
         <p>
           Giá giảm chạm đáy,thanh khoản thấp đỉnh điểm, thậm chí không có thanh
           khoản. thời điểm này nhiều nđt thông minh sẽ bắt đầu đi tìm kiếm, gom
@@ -172,91 +169,70 @@ function Detail() {
           quỹ đầu tư sẽ chuyển sang loại hình trú ẩn chủ yếu như bất động sản.
         </p>
       </div>
-      <div>
-        <Typography variant="h5">Các tin khác</Typography>
-
-        <div>
-          <a
-            href="https://hhlandgroup.com.vn/chinh-phu-giao-thanh-pho-da-nang-dau-tu-cang-lien-chieu/"
-            class="bubble-float-right hidden_view_01"
-          >
+      <div className={styles.relativeNews}>
+        <Typography variant="h5">Tin liên quan</Typography>
+        <div className={styles.linkNews}>
+          <a href="https://hhlandgroup.com.vn/chinh-phu-giao-thanh-pho-da-nang-dau-tu-cang-lien-chieu/">
             CHÍNH PHỦ GIAO THÀNH PHỐ ĐÀ NẴNG ĐẦU TƯ CẢNG LIÊN CHIỂU
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/cach-bat-mach-bong-bong-bat-dong-san-nam-2019/"
-            class="bubble-float-right hidden_view_01"
-          >
+          <a href="https://hhlandgroup.com.vn/cach-bat-mach-bong-bong-bat-dong-san-nam-2019/">
             CÁCH “BẮT MẠCH” BONG BÓNG BẤT ĐỘNG SẢN NĂM 2019
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/thua-dat-co-nhieu-nguoi-so-huu-cap-so-do-nhu-the-nao/"
-            class="bubble-float-right hidden_view_01"
-          >
+        </div>
+      </div>
+      <div className={styles.anotherNews}>
+        <Typography variant="h5">Các tin khác</Typography>
+
+        <div className={styles.linkNews}>
+          <a href="https://hhlandgroup.com.vn/chinh-phu-giao-thanh-pho-da-nang-dau-tu-cang-lien-chieu/">
+            CHÍNH PHỦ GIAO THÀNH PHỐ ĐÀ NẴNG ĐẦU TƯ CẢNG LIÊN CHIỂU
+          </a>
+          <a href="https://hhlandgroup.com.vn/cach-bat-mach-bong-bong-bat-dong-san-nam-2019/">
+            CÁCH “BẮT MẠCH” BONG BÓNG BẤT ĐỘNG SẢN NĂM 2019
+          </a>
+
+          <a href="https://hhlandgroup.com.vn/thua-dat-co-nhieu-nguoi-so-huu-cap-so-do-nhu-the-nao/">
             Thửa đất có nhiều người sở hữu, cấp sổ đỏ như thế nào?
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/chuyen-gia-binh-chon-10-su-kien-bat-dong-san-tieu-bieu-nam-2018/"
-            class="bubble-float-right hidden_view_01"
-          >
+
+          <a href="https://hhlandgroup.com.vn/chuyen-gia-binh-chon-10-su-kien-bat-dong-san-tieu-bieu-nam-2018/">
             Chuyên gia bình chọn 10 sự kiện bất động sản tiêu biểu năm 2018
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/da-nang-sau-con-lut-lich-su-nhieu-chuyen-bi-hai/"
-            class="bubble-float-right hidden_view_01"
-          >
+
+          <a href="https://hhlandgroup.com.vn/da-nang-sau-con-lut-lich-su-nhieu-chuyen-bi-hai/">
             ĐÀ NẴNG SAU CƠN LỤT LỊCH SỬ – NHIỀU CHUYỆN BI HÀI
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/bat-dong-san-nghi-duong-ven-bien-van-la-kenh-dau-tu-hieu-qua/"
-            class="bubble-float-right hidden_view_01"
-          >
+
+          <a href="https://hhlandgroup.com.vn/bat-dong-san-nghi-duong-ven-bien-van-la-kenh-dau-tu-hieu-qua/">
             Bất động sản nghỉ dưỡng ven biển vẫn là kênh đầu tư hiệu quả
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/phan-khuc-shophouse-dang-len-ngoi-loi-khuyen-nao-cho-nguoi-mua-nha/"
-            class="bubble-float-right hidden_view_01"
-          >
+
+          <a href="https://hhlandgroup.com.vn/phan-khuc-shophouse-dang-len-ngoi-loi-khuyen-nao-cho-nguoi-mua-nha/">
             Phân khúc shophouse đang lên ngôi, lời khuyên nào cho người mua nhà?
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/xu-huong-dich-chuyen-dan-cu-da-nang/"
-            class="bubble-float-right hidden_view_01"
-          >
+
+          <a href="https://hhlandgroup.com.vn/xu-huong-dich-chuyen-dan-cu-da-nang/">
             XU HƯỚNG DỊCH CHUYỂN DÂN CƯ ĐÀ NẴNG
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/khoi-thong-song-co-co-khoi-thong-diem-nghen-lien-ket-du-lich-da-nang-hoi-an/"
-            class="bubble-float-right hidden_view_01"
-          >
+
+          <a href="https://hhlandgroup.com.vn/khoi-thong-song-co-co-khoi-thong-diem-nghen-lien-ket-du-lich-da-nang-hoi-an/">
             KHƠI THÔNG SÔNG CỔ CÒ – KHƠI THÔNG “ĐIỂM NGHẼN” LIÊN KẾT DU LỊCH ĐÀ
             NẴNG – HỘI AN
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/da-nang-dau-tu-2-du-an-ham-chui-tai-nut-giao-thong-phia-tay-cau-rong/"
-            class="bubble-float-right hidden_view_01"
-          >
+
+          <a href="https://hhlandgroup.com.vn/da-nang-dau-tu-2-du-an-ham-chui-tai-nut-giao-thong-phia-tay-cau-rong/">
             Đà Nẵng: Đầu tư 2 dự án hầm chui tại nút giao thông phía tây cầu
             Rồng
           </a>
-          <br class="hidden_view_01" />
-          <a
-            href="https://hhlandgroup.com.vn/co-living-va-co-working-dang-la-mang-an-tien-lon-tai-viet-nam/"
-            class="bubble-float-right hidden_view_01"
-          >
+
+          <a href="https://hhlandgroup.com.vn/co-living-va-co-working-dang-la-mang-an-tien-lon-tai-viet-nam/">
             Co-living và Co-working đang là mảng ăn tiền lớn tại Việt Nam
           </a>
-          <br class="hidden_view_01" />
         </div>
-        <a class="other_new_readmore_btn">Xem thêm</a>
+        <div className={styles.button}>
+          <Visibility />
+          <Button>Xem thêm</Button>
+        </div>
       </div>
     </LayoutNews>
   );

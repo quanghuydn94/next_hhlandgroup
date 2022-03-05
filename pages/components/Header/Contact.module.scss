@@ -3,12 +3,9 @@ $textColor: var(--primary-color-);
   padding: 5px;
   color: var(--primary-color-);
   background: white;
-<<<<<<< HEAD
   position: fixed;
   top: 0;
   z-index: 10;
-=======
->>>>>>> 53e58f07f38f214d86967c0cc7840bf272734e1e
   p {
     display: flex;
     font-size: 0.8rem;
@@ -70,7 +67,6 @@ $textColor: var(--primary-color-);
 }
 @media (max-width: 600px) {
   .container {
-    
     p {
       font-size: 0.6rem;
     }

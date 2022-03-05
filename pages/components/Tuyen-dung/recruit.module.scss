@@ -1,0 +1,124 @@
+.Recruit {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 150px;
+  .menu_left {
+    padding: 13.125px;
+    float: left;
+    width: 30%;
+    .title {
+      margin-top: 58px;
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 8px;
+      h2 {
+        margin: 0;
+        float: left;
+        color: #333;
+        font-size: 24px;
+        font-family: "gillsansregular";
+        text-transform: uppercase;
+        padding: 0 0 15px;
+        border-bottom: 2px solid var(--primary-color-);
+      }
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        float: left;
+        width: 100%;
+        a {
+          cursor: pointer;
+          float: left;
+          width: 100%;
+          //   color: #666;
+          padding-top: 9px;
+          padding-bottom: 10px;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-family: "gillsansregular";
+          border-bottom: 1px solid #eee;
+          &:hover {
+            color: red;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    width: 70%;
+    float: right;
+    padding: 13.125px;
+    .page_title {
+      display: block;
+      position: relative;
+      color: var(--primary-color-);
+      font-size: 26px;
+      font-family: "gillsansregular";
+      padding: 0 0 5px;
+      //   text-shadow: 0 0 1px rgb(0 102 178 / 30%);
+      text-transform: uppercase;
+      line-height: 30px;
+    }
+    .project_item_bg {
+      margin-top: 10px;
+      margin-bottom: 28px;
+      overflow: hidden !important;
+      .img_desc {
+        padding: 0 10.5px;
+        width: 30%;
+        float: left;
+        img {
+          position: relative;
+          width: 100%;
+        }
+      }
+      .project_info {
+        padding: 0 10.5px;
+        float: right;
+        width: 70%;
+        a {
+          float: left;
+          width: 100%;
+          color: var(--primary-color-);
+          font-size: 16px;
+          text-transform: uppercase;
+          margin-top: 0;
+          font-weight: 700;
+        }
+        .split_bar_project {
+          float: left;
+          width: 100%;
+          margin-top: 8px;
+          border-bottom: 1px dotted #ccc;
+        }
+        .project_content {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .Recruit {
+    .project_item_bg {
+      .img_desc {
+        width: 100% !important;
+      }
+      .project_info {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu_left {
+    width: 100% !important;
+  }
+  .content {
+    width: 100% !important;
+  }
+}

@@ -1,10 +1,22 @@
 import { Typography } from "@material-ui/core";
 import { Pagination } from "@material-ui/lab";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CardItem from "../../Card/CardItem";
 import LayoutProject from "../Layout";
+import datas from "../../../constants/db.json";
+const firstIndex = 0;
 
-function Category({ pathName }) {
+function Category({ pathName, handleDetail }) {
+  const [pageSize, setPageSize] = useState(5);
+  const [page, setPage] = useState(1);
+  const [data, setData] = useState(datas.slice(firstIndex, pageSize));
+  useEffect(() => {
+    setData(datas.slice(0, pageSize));
+  }, [pageSize]);
+  const handleChange = (event, value) => {
+    setPage(value);
+    setData(datas.slice(firstIndex + pageSize * (value - 1), pageSize * value));
+  };
   return (
     <LayoutProject>
       {pathName === "/project/thanh-khoan" && (
@@ -14,14 +26,16 @@ function Category({ pathName }) {
         <Typography variant="h6">Dự án đang triển khai</Typography>
       )}
 
-      {Array.from({ length: 5 }).map((item, index) => (
-        <CardItem key={index} />
+      {data.map((project, index) => (
+        <CardItem key={index} item={project} handleDetail={handleDetail} />
       ))}
       <Pagination
         color="primary"
-        count={10}
+        count={Math.ceil(datas.length / pageSize)}
         variant="outlined"
         shape="rounded"
+        page={page}
+        onChange={handleChange}
       />
     </LayoutProject>
   );

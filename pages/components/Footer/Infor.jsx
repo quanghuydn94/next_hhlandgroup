@@ -1,13 +1,20 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 import styles from "./Footer.module.scss";
+import logo from "../../../public/logo/company.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 function Infor() {
   return (
     <>
-      <img src="/logo/company.svg" alt="" />
+      <div className={styles.logo}>
+        <Link href="/">
+          <img src="/logo/company.svg" alt="" />
+        </Link>
+      </div>
       <div className={styles.items}>
-        <Typography variant="h6">HLANDGROUP</Typography>
+        <Typography variant="h6">CÔNG TY AN VẠN TÍN</Typography>
         <Typography variant="body2">
           <span> Số ĐKKD:</span>
           0401780325 do Sở KHĐT Tp.Đà Nẵng cấp lần đầu ngày 29/07/2016
