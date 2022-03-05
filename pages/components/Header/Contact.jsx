@@ -6,11 +6,14 @@ import {
   WhatsApp,
   YouTube,
 } from "@material-ui/icons";
+import clsx from "clsx";
 import React from "react";
 import styles from "./Contact.module.scss";
-function Contact() {
+function Contact({isHideContact}) {
   return (
-    <Grid container justifyContent="center" className={styles.container}>
+    <Grid container justifyContent="center" className={clsx(styles.container, {
+      [styles.hidden]: isHideContact
+    })}>
       <Grid item xs={10}>
         <Typography>
           <span>

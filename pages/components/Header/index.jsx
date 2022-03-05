@@ -3,11 +3,11 @@ import Contact from "./Contact";
 import Navbar from "./Navbar";
 import styles from "./Header.module.scss";
 
-function Header() {
+function Header({isHideContact}) {
   return (
     <>
-      <Contact />
-      <Navbar />
+      <Contact isHideContact={isHideContact}/>
+      <Navbar isHideContact={isHideContact}/>
     </>
   );
 }

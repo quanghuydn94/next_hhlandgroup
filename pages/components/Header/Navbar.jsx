@@ -5,7 +5,7 @@ import styles from "./Navbar.module.scss";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { useRouter } from "next/router";
-function Navbar() {
+function Navbar({isHideContact}) {
   const [isHovered, setIsHovered] = useState(false);
   const [isBars, setIsBars] = useState(false);
   const router = useRouter();
@@ -66,7 +66,9 @@ function Navbar() {
     setIsBars(!isBars);
   };
   return (
-    <div className={styles.root} onMouseLeave={handleMouseLeave}>
+    <div className={clsx(styles.root, {
+      [styles.hiddenContact] : isHideContact
+    })} onMouseLeave={handleMouseLeave}>
       <div className={clsx(styles.header)}>
         <div className={clsx(styles.container)}>
           <div className={styles.logo}>
