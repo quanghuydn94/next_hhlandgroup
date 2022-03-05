@@ -5,11 +5,11 @@ import Slider from "./Slider";
 
 function Home() {
   return (
-      <div>
-        <Slider/>
-        <Projects/>
-        <News/>
-      </div>
+    <div>
+      <Slider />
+      <Projects />
+      <News />
+    </div>
   );
 }
 
