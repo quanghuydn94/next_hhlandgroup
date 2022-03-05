@@ -1,8 +1,4 @@
 .slider {
-<<<<<<< HEAD
-=======
-
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
   .wrapper {
     position: relative;
     .bg {
@@ -49,11 +45,7 @@
         width: 450px;
         h2 {
           color: #fff;
-<<<<<<< HEAD
-          background-color: rgba(192, 17, 17, 0.5);
-=======
           background-color: rgba(192, 17, 17, 0.75);
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
           padding: 6px 10px;
           margin-bottom: 0;
         }
@@ -61,11 +53,7 @@
           display: flex;
           color: #fff;
           h3 {
-<<<<<<< HEAD
-            background-color: rgba(17, 130, 252, 0.5);
-=======
             background-color: rgba(17, 130, 252, 0.75);
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
             height: 30px;
             margin-top: 2px;
             margin-right: 2px;
@@ -77,11 +65,7 @@
             padding: 2px 10px;
             align-items: center;
             cursor: pointer;
-<<<<<<< HEAD
-            background-color: rgba(239, 84, 7, 0.5);
-=======
             background-color: rgba(247, 236, 22, 0.75);
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
             height: 30px;
             width: 145px;
             justify-content: space-between;
@@ -114,10 +98,6 @@
 }
 @media (max-width: 1920px) {
   .slider {
-<<<<<<< HEAD
-    margin-top: 100px;
-=======
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
     .wrapper {
       .bg {
         .controls {
@@ -140,10 +120,6 @@
 }
 @media (max-width: 1280px) {
   .slider {
-<<<<<<< HEAD
-    margin-top: 100px;
-=======
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
     .wrapper {
       .bg {
         .controls {
@@ -184,10 +160,6 @@
 }
 @media (max-width: 960px) {
   .slider {
-<<<<<<< HEAD
-    margin-top: 100px;
-=======
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
     .wrapper {
       .bg {
         .controls {
@@ -244,10 +216,6 @@
 }
 @media (max-width: 600px) {
   .slider {
-<<<<<<< HEAD
-    margin-top: 100px;
-=======
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
     .wrapper {
       .bg {
         .controls {
@@ -293,17 +261,10 @@
               }
             }
           }
-<<<<<<< HEAD
         }
         .content.active {
           transform: translateX(25px);
         }
-=======
-        }
-        .content.active {
-          transform: translateX(25px);
-        }
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
       }
     }
   }

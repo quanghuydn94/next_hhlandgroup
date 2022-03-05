@@ -37,30 +37,28 @@ const projects = [
 ];
 function Projects() {
   return (
-<<<<<<< HEAD
-    <div className={styles.projects}>
-      <h2>Dự án</h2>
-      <Grid container spacing={1}>
-        {projects.map((item, index) => (
-          <Grid key={index} item xs={12} sm={6} md={4} className={styles.item}>
-            <div className={styles.wrapper}>
-              <div className={styles.image}>
-                <img src={item.img} alt={item.name} />
-                <h3>{item.name.toUpperCase()}</h3>
-=======
     <div className={styles.root}>
       <div className={styles.projects}>
         <h2>Dự án</h2>
         <Grid container spacing={1}>
           {projects.map((item, index) => (
-            <Grid key={index} item xs={12} sm={6} md={4} className={styles.item}>
+            <Grid
+              key={index}
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              className={styles.item}
+            >
               <div className={styles.wrapper}>
                 <div className={styles.image}>
                   <img src={item.img} alt={item.name} />
                   <h3>{item.name.toUpperCase()}</h3>
                 </div>
-                <p>{`${item.desc.slice(0, item.desc.slice(0, 150).lastIndexOf(" "))}...`}</p>
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
+                <p>{`${item.desc.slice(
+                  0,
+                  item.desc.slice(0, 150).lastIndexOf(" ")
+                )}...`}</p>
               </div>
             </Grid>
           ))}

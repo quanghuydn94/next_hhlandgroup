@@ -1,85 +1,4 @@
-<<<<<<< HEAD
-.projects {
-  padding: 20px 40px;
-  max-width: 1242px;
-  margin: 0 auto;
-  h2 {
-    color: var(--primary-color-);
-    border-bottom: 3px solid var(--primary-color-);
-  }
-  .item {
-    padding: 2px;
-    .wrapper {
-      border: 2px solid #dddada;
-      border-top: none;
-      cursor: pointer;
-      padding: 6px;
-      border-radius: 6px;
-      transition: all 0.25s ease-in-out;
-      &:hover {
-        border-color: var(--primary-color-);
-      }
-      .image {
-        width: 100%;
-        display: flex;
-        position: relative;
-        overflow: hidden;
-        border-radius: 6px;
-
-        img {
-          border-radius: 6px;
-          width: 100%;
-          margin: auto;
-          transition: all 0.25s ease-in-out;
-          &:hover {
-            transform: scale(1.1);
-          }
-        }
-        h3 {
-          font-size: 16px;
-          position: absolute;
-          bottom: 0;
-          height: 45px;
-          padding: 10px;
-          text-align: center;
-          margin: 0;
-          left: 0;
-          width: 100%;
-          color: #fff;
-          background-color: rgba(192, 17, 17, 0.5);
-        }
-      }
-      p {
-        height: 48px;
-        overflow: hidden;
-        padding: 6px;
-      }
-    }
-  }
-  .end {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    color: var(--primary-color-);
-    justify-content: space-between;
-
-    cursor: pointer;
-    h5 {
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-    .line {
-      content: "";
-      width: 95%;
-      height: 1px;
-      background-color: var(--primary-color-);
-    }
-  }
-=======
 .root {
-
   background-color: rgba(226, 219, 219, 0.2);
   .projects {
     padding: 20px 40px;
@@ -107,7 +26,7 @@
           display: flex;
           position: relative;
           overflow: hidden;
-  
+
           img {
             border-radius: 6px;
             width: 100%;
@@ -119,7 +38,7 @@
           }
           h3 {
             font-size: 16px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: Georgia, "Times New Roman", Times, serif;
             position: absolute;
             bottom: 0;
             height: 45px;
@@ -135,7 +54,7 @@
         p {
           overflow: hidden;
           padding: 6px;
-          white-space: wrap; 
+          white-space: wrap;
           overflow: hidden;
           text-overflow: ellipsis;
         }
@@ -148,7 +67,7 @@
       align-items: center;
       color: var(--primary-color-);
       justify-content: space-between;
-  
+
       cursor: pointer;
       h5 {
         transition: all 0.25s ease-in-out;
@@ -165,63 +84,11 @@
       }
     }
   }
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
 }
 @media (max-width: 1920px) {
 }
 @media (max-width: 1280px) {
-<<<<<<< HEAD
-  .projects {
-    padding: 20px 20px;
-    h2 {
-    }
-    .item {
-      .wrapper {
-        .image {
-          img {
-          }
-          h3 {
-          }
-        }
-        p {
-        }
-      }
-    }
-    .end {
-      h5 {
-      }
-      .line {
-        width: 80%;
-      }
-    }
-  }
-}
-@media (max-width: 960px) {
-  .projects {
-    padding: 20px 20px;
-    h2 {
-    }
-    .item {
-      .wrapper {
-        .image {
-          img {
-          }
-          h3 {
-          }
-        }
-        p {
-        }
-      }
-    }
-    .end {
-      h5 {
-      }
-      .line {
-        width: 90%;
-      }
-=======
   .root {
-
     .projects {
       padding: 20px 20px;
       h2 {
@@ -249,7 +116,6 @@
 }
 @media (max-width: 960px) {
   .root {
-
     .projects {
       padding: 20px 20px;
       h2 {
@@ -272,38 +138,11 @@
         .line {
         }
       }
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
     }
   }
 }
 @media (max-width: 600px) {
-<<<<<<< HEAD
-  .projects {
-    padding: 20px 20px;
-    h2 {
-    }
-    .item {
-      .wrapper {
-        .image {
-          img {
-          }
-          h3 {
-          }
-        }
-        p {
-        }
-      }
-    }
-    .end {
-      h5 {
-      }
-      .line {
-        width: 80%;
-      }
-    }
-=======
   .root {
-
     .projects {
       padding: 20px 20px;
       h2 {
@@ -327,6 +166,5 @@
         }
       }
     }
->>>>>>> aa7d4595faa70a32f4041b19353ae2c113308024
   }
 }
