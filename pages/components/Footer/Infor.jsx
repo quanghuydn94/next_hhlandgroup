@@ -17,10 +17,6 @@ function Infor() {
         <Typography variant="h6">
           CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI AN VẠN TÍN
         </Typography>
-        {/* <Typography variant="body2">
-          <span> Số ĐKKD:</span>
-          0401780325 do Sở KHĐT Tp.Đà Nẵng cấp lần đầu ngày 29/07/2016
-        </Typography> */}
         <Typography variant="body2">
           <span> Địa chỉ:</span>
           45 Trần Thủ Độ, Phường Điện Nam Bắc, Thị xã Điện Bàn, Tỉnh Quảng Nam,

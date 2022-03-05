@@ -34,49 +34,52 @@ const news = [
 ]
 function News() {
   return (
-    <div className={styles.news}>
-      <h2>Thông tin nổi bật</h2>
-      <Grid container spacing={1}>
-        <Grid  item xs={12} sm={12} md={6}>
-          {news.filter((item, index)=> index === 0)
-            .map((item, index)=> (
-              <div key={index} className={styles.item}>
+    <div className={styles.root}>
 
-                <div  className={styles.wrapper}>
+      <div className={styles.news}>
+        <h2>Thông tin nổi bật</h2>
+        <Grid container spacing={1}>
+          <Grid  item xs={12} sm={12} md={6}>
+            {news.filter((item, index)=> index === 0)
+              .map((item, index)=> (
+                <div key={index} className={styles.item}>
 
-                  <div className={styles.image}>
-                    <img src={item.img} alt={item.name}/>
-                    <h3>{item.name.toUpperCase()}</h3>
+                  <div  className={styles.wrapper}>
+
+                    <div className={styles.image}>
+                      <img src={item.img} alt={item.name}/>
+                      <h3>{item.name.toUpperCase()}</h3>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-            ))
-          }
+              ))
+            }
 
-        </Grid>
-        <Grid container item xs={12} sm={12} md={6}>
+          </Grid>
+          <Grid container item xs={12} sm={12} md={6}>
 
-          {news.filter((item, index)=> index !== 0)
-            .map((item, index)=> (
-            <Grid key={index} item xs={12} sm={6} md={6} >
-              <div className={styles.item}>
+            {news.filter((item, index)=> index !== 0)
+              .map((item, index)=> (
+              <Grid key={index} item xs={12} sm={6} md={6} >
+                <div className={styles.item}>
 
-                <div className={styles.wrapper}>
+                  <div className={styles.wrapper}>
 
-                  <div className={styles.image}>
-                    <img src={item.img} alt={item.name}/>
-                    <h3>{item.name.toUpperCase()}</h3>
+                    <div className={styles.image}>
+                      <img src={item.img} alt={item.name}/>
+                      <h3>{item.name.toUpperCase()}</h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Grid>
-          ))}
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
-      </Grid>
-      <div className={styles.end}>
-        <div className={styles.line}></div>
-        <h5>Xem thêm</h5>
+        <div className={styles.end}>
+          <div className={styles.line}></div>
+          <h5>Xem thêm</h5>
+        </div>
       </div>
     </div>
   );

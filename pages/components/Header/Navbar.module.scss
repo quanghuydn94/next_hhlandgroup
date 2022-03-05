@@ -1,110 +1,123 @@
 $textColor: var(--primary-color-);
-.header {
+.root {
   position: fixed;
   top: 27px;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  transition: all 0.25s ease-in-out;
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1242px;
-    margin: 0 auto;
-
-    .logo {
-      cursor: pointer;
-      width: 100px;
-      margin-left: 20px;
-      img {
-        width: 100%;
-      }
-    }
-    .menu {
-      list-style: none;
+  z-index: 10000;
+  .header {
+    z-index: 1000;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 6px 0;
+    .container {
       display: flex;
       flex-direction: row;
-      margin: 0;
-      padding-left: 20px;
-      transform-origin: top;
-      transition: all 0.25s ease-in-out;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1242px;
+      margin: 0 auto;
 
-      li {
+      .logo {
+        cursor: pointer;
+        width: 100px;
+        margin-left: 20px;
+        img {
+          width: 100%;
+        }
+      }
+      .menu {
+        list-style: none;
         display: flex;
-        flex-direction: column;
-        margin: 0 10px;
-        position: relative;
-        h4 {
-          text-transform: uppercase;
-          color: $textColor;
-          position: relative;
-          font-weight: 500;
+        flex-direction: row;
+        margin: 0;
+        padding-left: 20px;
+        transform-origin: top;
+        transition: all 0.25s ease-in-out;
+
+        li {
+          display: flex;
+          flex-direction: column;
           margin: 0 10px;
-          transition: all 0.25s ease-in-out;
-          padding-bottom: 10px;
-          &:hover {
-            background: transparent;
+          position: relative;
+          h4 {
+            text-transform: uppercase;
+            color: $textColor;
+            position: relative;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.25s ease-in-out;
+            padding-bottom: 10px;
+            &:hover {
+              background: transparent;
+              color: var(--color-hover-);
+            }
+          }
+          &:hover .line {
+            width: 50%;
+            transition: all 0.25s ease-in-out;
+          }
+          .line {
+            position: relative;
+            transform: translateY(-100%);
+            background-color: var(--primary-color-);
+            margin: auto;
+            width: 0;
+            height: 6px;
+            border-radius: 6px;
+            transition: all 0.25s ease-in-out;
+          }
+          .line.active {
+            width: 50%;
+          }
+          h4.active {
             color: var(--color-hover-);
           }
         }
-        &:hover .line {
-          width: 50%;
-          transition: all 0.25s ease-in-out;
-        }
-        .line {
-          position: relative;
-          transform: translateY(-100%);
-          background-color: var(--primary-color-);
-          margin: auto;
-          width: 0;
-          height: 6px;
-          border-radius: 6px;
-          transition: all 0.25s ease-in-out;
-        }
-        .line.active {
-          width: 50%;
-        }
-        h4.active {
-          color: var(--color-hover-);
-        }
       }
-    }
 
-    .controls {
-      display: none;
-      flex-direction: row;
-      .btnMenu {
-        cursor: pointer;
-        width: 26px;
-        height: 30px;
-        background-color: rgba(146, 141, 141, 0.1);
-        border-radius: 4px;
-        display: flex;
-        margin-top: 6px;
+      .controls {
+        display: none;
+        flex-direction: row;
+        .btnMenu {
+          cursor: pointer;
+          width: 26px;
+          height: 30px;
+          background-color: rgba(146, 141, 141, 0.1);
+          border-radius: 4px;
+          display: flex;
+          margin-top: 6px;
+        }
       }
     }
   }
   .projectsList {
     list-style: none;
+    background-color: rgba(255, 255, 255, 0.8);
     color: var(--primary-color-);
     flex-direction: row;
     bottom: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100000;
     justify-content: flex-end;
     padding-right: 200px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     transition: all 0.25s ease-in-out;
-    display: none;
+    transform: scaleY(0);
+    transform-origin: top;
+    display: flex;
     li {
-      margin: 20px 10px 0px;
+      margin: 0px 10px;
       cursor: pointer;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        transform: translateY(-4px);
+        color: rgba(192, 17, 17, 0.75);
+      }
     }
   }
   .projectsList.active {
-    display: flex;
+    transform: scaleY(1);
   }
 }
 
@@ -113,137 +126,125 @@ $textColor: var(--primary-color-);
 @media (max-width: 1280px) {
 }
 @media (max-width: 960px) {
-  .header {
-    .container {
-      justify-content: space-between;
-      position: relative;
+  .root {
+    .header {
+      .container {
+        justify-content: space-between;
+        position: relative;
 
-      .logo {
-        img {
-          width: 100px;
-          // height: 100%;
-          cursor: pointer;
+        .logo {
+          img {
+            width: 100px;
+            // height: 100%;
+            cursor: pointer;
+          }
         }
-      }
-      .menu {
-        background-color: #fff;
+        .menu {
+          background-color: #fff;
 
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        transform: scaleY(0);
-        top: 60px;
-        width: 100%;
-        transition: all 0.25s ease-in-out;
-        li {
-          margin: 20px 10px 10px;
-          cursor: pointer;
-          h4 {
-            &:hover.line {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          transform: scaleY(0);
+          top: 60px;
+          width: 100%;
+          transition: all 0.25s ease-in-out;
+          li {
+            margin: 20px 10px 10px;
+            cursor: pointer;
+            h4 {
+            }
+            &:hover .line {
               width: 100%;
               left: 0;
             }
-          }
 
-          .line.active {
-            width: 100%;
+            .line.active {
+              width: 100%;
+            }
           }
         }
-      }
-      .menu.active {
-        transform: scaleY(1);
-      }
-      .controls {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        margin-right: 20px;
-        .btnMenu {
+        .menu.active {
+          transform: scaleY(1);
+        }
+        .controls {
           display: flex;
-          margin-top: 6px;
+          width: 100%;
+          justify-content: flex-end;
+          margin-right: 20px;
+          .btnMenu {
+            display: flex;
+            margin-top: 6px;
+          }
         }
       }
     }
-  }
-  .projectsList {
-    list-style: none;
-    display: none;
-    color: var(--primary-color-);
-    flex-direction: row;
-    bottom: 0;
-    width: 100%;
-    justify-content: flex-end;
-  }
-  .projectsList.active {
-    transform: scaleY(0);
-    display: none !important;
+    .projectsList {
+      display: none !important;
+    }
+    .projectsList.active {
+      display: none !important;
+    }
   }
 }
 @media (max-width: 600px) {
-  .header {
-    .container {
-      justify-content: space-between;
-      position: relative;
+  .root {
+    .header {
+      .container {
+        justify-content: space-between;
+        position: relative;
 
-      .logo {
-        img {
-          width: 100px;
-          // height: 100%;
-          cursor: pointer;
+        .logo {
+          img {
+            width: 100px;
+            cursor: pointer;
+          }
         }
-      }
-      .menu {
-        background-color: #fff;
+        .menu {
+          background-color: #fff;
 
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        transform: scaleY(0);
-        top: 60px;
-        width: 100%;
-        transition: all 0.25s ease-in-out;
-        li {
-          margin: 20px 10px 10px;
-          cursor: pointer;
-          h4 {
-            &:hover.line {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          transform: scaleY(0);
+          top: 60px;
+          width: 100%;
+          transition: all 0.25s ease-in-out;
+          li {
+            margin: 20px 10px 10px;
+            cursor: pointer;
+            h4 {
+            }
+            &:hover .line {
               width: 100%;
               left: 0;
             }
-          }
 
-          .line.active {
-            width: 100%;
+            .line.active {
+              width: 100%;
+            }
           }
         }
-      }
-      .menu.active {
-        transform: scaleY(1);
-      }
-      .controls {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        margin-right: 20px;
-        .btnMenu {
+        .menu.active {
+          transform: scaleY(1);
+        }
+        .controls {
           display: flex;
-          margin-top: 6px;
+          width: 100%;
+          justify-content: flex-end;
+          margin-right: 20px;
+          .btnMenu {
+            display: flex;
+            margin-top: 6px;
+          }
         }
       }
     }
-  }
-  .projectsList {
-    list-style: none;
-    display: none;
-    color: var(--primary-color-);
-    flex-direction: row;
-    bottom: 0;
-    width: 100%;
-    transform: scaleY(0);
-    justify-content: flex-end;
-  }
-  .projectsList.active {
-    transform: scaleY(0);
-    display: none !important;
+    .projectsList {
+      display: none !important;
+    }
+    .projectsList.active {
+      display: none !important;
+    }
   }
 }

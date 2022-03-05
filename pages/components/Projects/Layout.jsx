@@ -29,9 +29,9 @@ function LayoutProject({ children }) {
                   <Link key={index} href={item.link}>
                     <MenuItem
                       className={clsx(styles.item, {
-                        [styles.active]:
-                          router.asPath == item.link ||
-                          router.route == item.link + "/[...slug]",
+                        [styles.active]: router.asPath == item.link,
+                        // ||
+                        // router.route == item.link + "/[...slug]" || router.route == item.link + "/[...slug]" ,
                       })}
                     >
                       {item.title}

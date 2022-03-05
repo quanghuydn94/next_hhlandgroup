@@ -1,4 +1,3 @@
-import { Grid, Typography, MenuItem } from "@material-ui/core";
 import Link from "next/link";
 import React, { useState } from "react";
 import clsx from "clsx";
@@ -60,20 +59,15 @@ function Navbar() {
     setIsHovered(false);
   };
 
-  const handleClickNav = () => {
+  const handleClickNav = (index) => {
     setIsBars(false);
   };
   const handleToggle = () => {
     setIsBars(!isBars);
   };
   return (
-    <>
-      <div
-        className={clsx(styles.header, {
-          [styles.active]: isHovered,
-        })}
-        onMouseLeave={handleMouseLeave}
-      >
+    <div className={styles.root} onMouseLeave={handleMouseLeave}>
+      <div className={clsx(styles.header)}>
         <div className={clsx(styles.container)}>
           <div className={styles.logo}>
             <Link href="/">
@@ -97,10 +91,9 @@ function Navbar() {
                       className={clsx(styles.menuItem, {
                         [styles.active]:
                           router.asPath == item.link ||
-                          router.pathname == item.link + "/[...slug]" ||
-                          router.pathname == item.link + "/[category]" ||
-                          router.pathname ==
-                            item.link + "/[category]/[...slug]",
+                          router.route == item.link + "/[...slug]" ||
+                          router.route == item.link + "/[category]" ||
+                          router.route == item.link + "/[category]/[...slug]",
                       })}
                     >
                       {item.title}
@@ -112,8 +105,8 @@ function Navbar() {
                     [styles.active]:
                       router.asPath == item.link ||
                       router.route == item.link + "/[...slug]" ||
-                      router.pathname == item.link + "/[category]" ||
-                      router.pathname == item.link + "/[category]/[...slug]",
+                      router.route == item.link + "/[category]" ||
+                      router.route == item.link + "/[category]/[...slug]",
                   })}
                 ></div>
               </li>
@@ -145,19 +138,19 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <div
-          className={clsx(styles.projectsList, {
-            [styles.active]: isHovered,
-          })}
-        >
-          {navs[2].list.map((item, index) => (
-            <Link key={index} href={item.link}>
-              <li>{item.title}</li>
-            </Link>
-          ))}
-        </div>
       </div>
-    </>
+      <div
+        className={clsx(styles.projectsList, {
+          [styles.active]: isHovered,
+        })}
+      >
+        {navs[2].list.map((item, index) => (
+          <Link key={index} href={item.link}>
+            <li>{item.title}</li>
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }
 
