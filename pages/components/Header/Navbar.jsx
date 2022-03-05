@@ -1,9 +1,12 @@
+import { Grid, Typography, MenuItem } from "@material-ui/core";
 import Link from "next/link";
 import React, { useState } from "react";
 import clsx from "clsx";
 import styles from "./Navbar.module.scss";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import Logo from "../../assets/logo.jpg";
+import Image from "next/image";
 import { useRouter } from "next/router";
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
@@ -24,11 +27,11 @@ function Navbar() {
       list: [
         {
           title: "Dự án đang triển khai",
-          link: "/project/trien-khai",
+          link: "/",
         },
         {
           title: "Dự án đã thanh khoản",
-          link: "/project/thanh-khoan",
+          link: "/",
         },
       ],
     },
@@ -46,12 +49,14 @@ function Navbar() {
       title: "Liên hệ",
     },
   ];
+  useE
 
   const handleMouseOver = (index) => {
     if (index === 2) {
       setIsHovered(true);
     } else {
       setIsHovered(false);
+
     }
   };
 
@@ -66,8 +71,12 @@ function Navbar() {
     setIsBars(!isBars);
   };
   return (
-    <div className={styles.root} onMouseLeave={handleMouseLeave}>
-      <div className={clsx(styles.header)}>
+    <div className={styles.root}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div
+        className={clsx(styles.header)}
+      >
         <div className={clsx(styles.container)}>
           <div className={styles.logo}>
             <Link href="/">
@@ -91,9 +100,7 @@ function Navbar() {
                       className={clsx(styles.menuItem, {
                         [styles.active]:
                           router.asPath == item.link ||
-                          router.route == item.link + "/[...slug]" ||
-                          router.route == item.link + "/[category]" ||
-                          router.route == item.link + "/[category]/[...slug]",
+                          router.route == item.link + "/[...slug]",
                       })}
                     >
                       {item.title}
@@ -104,9 +111,7 @@ function Navbar() {
                   className={clsx(styles.line, {
                     [styles.active]:
                       router.asPath == item.link ||
-                      router.route == item.link + "/[...slug]" ||
-                      router.route == item.link + "/[category]" ||
-                      router.route == item.link + "/[category]/[...slug]",
+                      router.route == item.link + "/[...slug]",
                   })}
                 ></div>
               </li>
@@ -145,9 +150,7 @@ function Navbar() {
         })}
       >
         {navs[2].list.map((item, index) => (
-          <Link key={index} href={item.link}>
-            <li>{item.title}</li>
-          </Link>
+          <li key={index}>{item.title}</li>
         ))}
       </div>
     </div>
