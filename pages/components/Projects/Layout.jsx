@@ -4,8 +4,15 @@ import Link from "next/link";
 import React from "react";
 import Banner from "../Banner/Banner";
 import styles from "./Projects.module.scss";
-
+import clsx from "clsx";
+import { useRouter } from "next/router";
 function LayoutProject({ children }) {
+  const router = useRouter();
+  const navLink = [
+    { link: "/project/thanh-khoan", title: "Dự án đã thanh khoản" },
+    { link: "/project/trien-khai", title: "Dự án đang triển khai" },
+  ];
+  console.log(router);
   return (
     <>
       <Banner />
@@ -18,15 +25,20 @@ function LayoutProject({ children }) {
           <Grid container>
             <Grid item md={3} sm={4} className={styles.leftBar}>
               <div className={styles.listMenu}>
-                <MenuItem className={styles.item}>
-                  <Link href="/project/thanh-khoan">Dự án đã thanh khoản</Link>
-                  <ArrowRight />
-                </MenuItem>
-                <MenuItem className={styles.item}>
-                  <Link href="/project/trien-khai"> Dự án đang triển khai</Link>
-
-                  <ArrowRight />
-                </MenuItem>
+                {navLink.map((item, index) => (
+                  <Link key={index} href={item.link}>
+                    <MenuItem
+                      className={clsx(styles.item, {
+                        [styles.active]:
+                          router.asPath == item.link ||
+                          router.route == item.link + "/[...slug]",
+                      })}
+                    >
+                      {item.title}
+                      <ArrowRight />
+                    </MenuItem>
+                  </Link>
+                ))}
               </div>
             </Grid>
             <Grid item md={9} sm={8} xs={12} className={styles.rightBar}>

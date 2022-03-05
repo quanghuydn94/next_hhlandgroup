@@ -5,8 +5,6 @@ import clsx from "clsx";
 import styles from "./Navbar.module.scss";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import Logo from "../../assets/logo.jpg";
-import Image from "next/image";
 import { useRouter } from "next/router";
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
@@ -27,11 +25,11 @@ function Navbar() {
       list: [
         {
           title: "Dự án đang triển khai",
-          link: "/",
+          link: "/project/trien-khai",
         },
         {
           title: "Dự án đã thanh khoản",
-          link: "/",
+          link: "/project/thanh-khoan",
         },
       ],
     },
@@ -62,7 +60,7 @@ function Navbar() {
     setIsHovered(false);
   };
 
-  const handleClickNav = (index) => {
+  const handleClickNav = () => {
     setIsBars(false);
   };
   const handleToggle = () => {
@@ -99,7 +97,10 @@ function Navbar() {
                       className={clsx(styles.menuItem, {
                         [styles.active]:
                           router.asPath == item.link ||
-                          router.route == item.link + "/[...slug]",
+                          router.pathname == item.link + "/[...slug]" ||
+                          router.pathname == item.link + "/[category]" ||
+                          router.pathname ==
+                            item.link + "/[category]/[...slug]",
                       })}
                     >
                       {item.title}
@@ -110,7 +111,9 @@ function Navbar() {
                   className={clsx(styles.line, {
                     [styles.active]:
                       router.asPath == item.link ||
-                      router.route == item.link + "/[...slug]",
+                      router.route == item.link + "/[...slug]" ||
+                      router.pathname == item.link + "/[category]" ||
+                      router.pathname == item.link + "/[category]/[...slug]",
                   })}
                 ></div>
               </li>
@@ -148,7 +151,9 @@ function Navbar() {
           })}
         >
           {navs[2].list.map((item, index) => (
-            <li key={index}>{item.title}</li>
+            <Link key={index} href={item.link}>
+              <li>{item.title}</li>
+            </Link>
           ))}
         </div>
       </div>
