@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Grid, Link, Typography } from "@material-ui/core";
 import React from "react";
 import styles from "./Footer.module.scss";
 import FormNews from "./FormNews";
@@ -10,16 +10,21 @@ function Footer() {
     <>
       <div className={styles.wrapper}>
         <Grid container justifyContent="center" className={styles.container}>
-          <Grid item md={5} sm={12} xs={12} className={styles.infor}>
+          <Grid item md={6} sm={12} xs={12} className={styles.infor}>
             <Infor />
           </Grid>
-          <Grid item md={2} sm={6} xs={12} className={styles.policy}>
-            <Policy />
-          </Grid>
-          <Grid item md={3} sm={6} xs={12} className={styles.getNews}>
+          <Grid item md={6} sm={12} xs={12} className={styles.getNews}>
             <FormNews />
           </Grid>
         </Grid>
+        <div className={styles.copyRight}>
+          <Typography paragraph>
+            Copyright <sup>&#169;</sup> 2019 - 2022 An Vạn Tín. Site by:
+            <Link href="https://tipici.vn/" target="_blank">
+              Tipici
+            </Link>
+          </Typography>
+        </div>
       </div>
     </>
   );

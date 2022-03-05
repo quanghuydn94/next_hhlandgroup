@@ -15,7 +15,7 @@ a {
   box-sizing: border-box;
 }
 :root {
-  --primary-color-: #c01111;
+  --primary-color-: #ef0000;
   --text-color-: #6b6868;
-  --color-hover-: #eb2027;
+  --color-hover-: #ff3308;
 }

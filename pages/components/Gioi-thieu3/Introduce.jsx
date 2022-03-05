@@ -36,15 +36,20 @@ export default function Introduce() {
             >
               <div className={styles.page_title}>giới thiệu chung</div>
               <div className={styles.page_content}>
-                <h1>CÔNG TY TNHH AN VẠN TÍN</h1>
+                <h1>
+                  CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI AN VẠN TÍN
+                </h1>
                 <div className={styles.profile}>
                   <div className={styles.media_left}>
                     <img src=" " alt="avatar" />
                   </div>
 
                   <div className={styles.media_body}>
-                    <p>Ông Đinh Văn Hoàng</p>
-                    <p>Tổng Giám đốc Công ty TNHH An Vạn Tín</p>
+                    <p>Ông NGUYỄN VIẾT HÙNG</p>
+                    <p>
+                      Giám đốc CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI AN
+                      VẠN TÍN
+                    </p>
                   </div>
                 </div>
                 <div className={styles.gioithieucongty}>

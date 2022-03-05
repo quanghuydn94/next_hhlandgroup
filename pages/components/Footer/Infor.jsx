@@ -14,26 +14,28 @@ function Infor() {
         </Link>
       </div>
       <div className={styles.items}>
-        <Typography variant="h6">CÔNG TY AN VẠN TÍN</Typography>
-        <Typography variant="body2">
+        <Typography variant="h6">
+          CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY DỰNG VÀ THƯƠNG MẠI AN VẠN TÍN
+        </Typography>
+        {/* <Typography variant="body2">
           <span> Số ĐKKD:</span>
           0401780325 do Sở KHĐT Tp.Đà Nẵng cấp lần đầu ngày 29/07/2016
-        </Typography>
+        </Typography> */}
         <Typography variant="body2">
           <span> Địa chỉ:</span>
-          Tầng 4, tòa nhà Thành Lợi, 249 Nguyễn Văn Linh, P.Vĩnh Trung, Q.Thanh
-          Khê, Tp.Đà Nẵng, Việt Nam
+          45 Trần Thủ Độ, Phường Điện Nam Bắc, Thị xã Điện Bàn, Tỉnh Quảng Nam,
+          Việt Nam
         </Typography>
         <Typography variant="body2">
           <span> Người đại diện: </span>
-          ông Trần Viết Ngọc
+          ông NGUYỄN VIẾT HÙNG
         </Typography>
         <Typography variant="body2">
           <span> Số điện thoại:</span>
-          0919 71 00 55
+          <Link href="tel:0905 184 219">0905 184 219</Link>
         </Typography>
         <Typography variant="body2">
-          <span> Email:</span> dvkh.brightland@gmail.com
+          <span> Email:</span> Contact@gmail.com
         </Typography>
       </div>
     </>

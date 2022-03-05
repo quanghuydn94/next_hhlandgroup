@@ -53,6 +53,8 @@ function Navbar() {
   const handleMouseOver = (index) => {
     if (index === 2) {
       setIsHovered(true);
+    } else {
+      setIsHovered(false);
     }
   };
 

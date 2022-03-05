@@ -14,7 +14,7 @@ function LayoutProject({ children }) {
         image="https://hhlandgroup.com.vn/wp-content/uploads/2019/06/duan.jpg"
       />
       <Grid container justifyContent="center" className={styles.container}>
-        <Grid item md={10} sm={12} xs={12}>
+        <Grid item md={12} sm={12} xs={12}>
           <Grid container>
             <Grid item md={3} sm={4} className={styles.leftBar}>
               <div className={styles.listMenu}>

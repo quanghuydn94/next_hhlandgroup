@@ -9,7 +9,7 @@ $textSizeCommon: 0.9rem;
   .container {
     color: var(--primary-color-);
     padding: 30px 0;
-    max-width: 1920px;
+    max-width: 1242px;
     margin: 0 auto;
     .infor {
       padding: 0 30px;
@@ -106,6 +106,23 @@ $textSizeCommon: 0.9rem;
             top: 0px;
           }
         }
+      }
+    }
+  }
+  .copyRight {
+    text-align: center;
+    background: var(--primary-color-);
+    color: white;
+    p {
+      margin-bottom: 0;
+      padding: 5px;
+    }
+    a {
+      margin-left: 5px;
+      color: white;
+      font-size: 1.2rem;
+      &:hover {
+        background: var(--color-hover-);
       }
     }
   }

@@ -1,8 +1,9 @@
 .root {
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   text-align: right;
   right: 35px;
+  z-index: 2;
   button {
     border-radius: 5px;
     background: var(--color-hover-);

@@ -13,7 +13,7 @@ function Policy() {
           <Facebook />
           <YouTube />
         </div>
-        <img src="https://brightland.vn/Images/logoSaleNoti.png" alt="" />
+        {/* <img src="https://brightland.vn/Images/logoSaleNoti.png" alt="" /> */}
       </div>
     </>
   );
