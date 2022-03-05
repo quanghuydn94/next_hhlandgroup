@@ -5,7 +5,7 @@
       width: 100%;
       padding-top: 50%;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       position: relative;
       transition: all 0.25s ease-in-out;
       .controls {
@@ -45,7 +45,7 @@
         width: 450px;
         h2 {
           color: #fff;
-          background-color: rgba(192, 17, 17, 0.75);
+          background-color: rgb(255 20 20 / 75%);
           padding: 6px 10px;
           margin-bottom: 0;
         }

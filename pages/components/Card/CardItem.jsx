@@ -11,7 +11,10 @@ function CardItem({ handleDetail, item }) {
         <Typography variant="h5">{item.title}</Typography>
         <Typography variant="body2">{item.address}</Typography>
         <Divider className={styles.divider} />
-        <Typography variant="body2">{item.description}</Typography>
+        <Typography variant="body2">{`${item.description.slice(
+          0,
+          item.description.slice(0, 150).lastIndexOf(" ")
+        )}...`}</Typography>
         <Button className={styles.button}>
           <ArrowRight fontSize="small" className={styles.icon} /> Xem thêm
         </Button>
