@@ -5,7 +5,8 @@
       width: 100%;
       padding-top: 50%;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+      // background-position: 100%;
       position: relative;
       transition: all 0.25s ease-in-out;
       .controls {

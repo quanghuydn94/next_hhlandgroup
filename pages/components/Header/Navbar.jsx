@@ -49,7 +49,6 @@ function Navbar() {
       title: "Liên hệ",
     },
   ];
-  useE
 
   const handleMouseOver = (index) => {
     if (index === 2) {
