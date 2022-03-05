@@ -1,7 +1,7 @@
 .Recruit {
   max-width: 1170px;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 10px;
   .menu_left {
     padding: 13.125px;
     float: left;
@@ -41,7 +41,7 @@
           font-family: "gillsansregular";
           border-bottom: 1px solid #eee;
           &:hover {
-            color: red;
+            color: #eb2027;
             transition: all 0.2s ease-in-out;
           }
         }
@@ -67,17 +67,20 @@
       margin-top: 10px;
       margin-bottom: 28px;
       overflow: hidden !important;
+      border: 1px solid #e0dddd;
+      border-top: none;
+      border-radius: 5px;
       .img_desc {
-        padding: 0 10.5px;
         width: 30%;
-        float: left;
+        cursor: pointer;
         img {
           position: relative;
           width: 100%;
+          float: left;
         }
       }
       .project_info {
-        padding: 0 10.5px;
+        padding: 0 0 0 25px;
         float: right;
         width: 70%;
         a {
@@ -99,10 +102,17 @@
           margin-top: 5px;
         }
       }
+      &:hover {
+        transition: all 0.5s;
+        border-color: #eb2027;
+      }
     }
   }
 }
 @media screen and (max-width: 960px) {
+  .img_banner {
+    margin-top: 100px;
+  }
   .Recruit {
     .project_item_bg {
       .img_desc {
