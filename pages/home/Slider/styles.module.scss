@@ -1,37 +1,46 @@
 .slider {
   .wrapper {
     position: relative;
-    .bg {
-      width: 100%;
-      padding-top: 42.4%;
-      padding-bottom: 0;
-      background-repeat: no-repeat;
-      background-size: contain;
+    width: 100%;
+    // padding-top: 42.4%;
+
+    .bgRow {
+      display: flex;
+      flex-direction: row;
       position: relative;
-      transition: all 0.25s ease-in-out;
-      .controls {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 0;
+      transition: all 0.3s ease-in-out;
+      .bg {
+        padding-top: 42.4%;
+        padding-bottom: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        transition: all 0.25s ease-in-out;
+        
+      }
+    }
+    .controls {
+      width: 100%;
+      position: absolute;
+      top: 42%;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      .btn {
+        width: 40px;
+        height: 40px;
         display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
-        .btn {
-          width: 40px;
-          height: 40px;
-          display: flex;
-          border-radius: 50%;
-          color: rgba(255, 255, 255, 0.8);
-          border: 2px solid rgba(255, 255, 255, 0.8);
-          background-color: rgba(0, 0, 0, 0.5);
-          cursor: pointer;
-          &:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-          }
-          .icon {
-            margin: auto;
-          }
+        border-radius: 50%;
+        color: rgba(255, 255, 255, 0.8);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        .icon {
+          margin: auto;
         }
       }
     }

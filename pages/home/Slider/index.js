@@ -39,6 +39,7 @@ const slides = [
 ];
 function Slider() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [mouseDownX, setMouseDownX] = useState(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,7 +51,7 @@ function Slider() {
           return 0;
         }
       });
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [activeIndex]);
 
@@ -74,29 +75,67 @@ function Slider() {
       }
     });
   };
+
+  const handleMouseDown = (e) => {
+    setMouseDownX(Number(e.clientX))
+    // console.log(e)
+  }
+  const handleMouseUp = (e) => {
+    if(Number(e.clientX) > mouseDownX) {
+      setActiveIndex(prev=> {
+        if(prev > 0) {
+          return prev -1
+        } else {
+          return slides.length - 1
+        }
+      })
+    }
+    if(Number(e.clientX) < mouseDownX) {
+      setActiveIndex(prev=>{
+        if (prev < slides.length - 1) {
+          return prev + 1
+        } else {
+          return 0
+        }
+      })
+    }
+  }
   return (
     <div className={styles.slider}>
       <div className={styles.wrapper}>
-        {slides
-          .filter((item, index) => index === Number(activeIndex))
-          .map((item, index) => (
-            <div
-              key={index}
-              className={styles.bg}
-              style={{
-                backgroundImage: `url(${item.image})`,
-              }}
-            >
-              <div className={styles.controls}>
-                <div className={styles.btn} onClick={handleClickLeft}>
-                  <ChevronLeftIcon className={styles.icon} />
-                </div>
-                <div className={styles.btn} onClick={handleClickRight}>
-                  <ChevronRightIcon className={styles.icon} />
-                </div>
+        <div className={styles.bgRow}
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+          style={{
+            width: `${slides.length}00%`,
+            transform: `translateX(-${activeIndex * (100 / slides.length)}%)`
+          }}
+        >
+          {
+          // slides.filter((item, index) => index === Number(activeIndex))
+            slides.map((item, index) => (
+              <div
+                key={index}
+                className={styles.bg}
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                  width: `${slides.length}0%`,
+                  paddingTop: `${slides.length * 2 - 0.8}%`,
+                }}
+                
+
+              >
               </div>
-            </div>
-          ))}
+            ))}
+        </div>
+        <div className={styles.controls}>
+          <div className={styles.btn} onClick={handleClickLeft}>
+            <ChevronLeftIcon className={styles.icon} />
+          </div>
+          <div className={styles.btn} onClick={handleClickRight}>
+            <ChevronRightIcon className={styles.icon} />
+          </div>
+        </div>
         <div className={styles.contents}>
           {slides.map((item, index) => (
             <div
