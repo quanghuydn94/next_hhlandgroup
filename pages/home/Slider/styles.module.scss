@@ -2,12 +2,10 @@
   .wrapper {
     position: relative;
     width: 100%;
-    // padding-top: 42.4%;
-
+    overflow: hidden;
     .bgRow {
       display: flex;
       flex-direction: row;
-      position: relative;
       transition: all 0.3s ease-in-out;
       .bg {
         padding-top: 42.4%;
@@ -46,7 +44,7 @@
     }
     .contents {
       position: absolute;
-      bottom: 150px;
+      bottom: 20%;
       .content {
         position: absolute;
         bottom: 0;
@@ -109,18 +107,9 @@
 @media (max-width: 1920px) {
   .slider {
     .wrapper {
-      .bg {
-        .controls {
-          .btn {
-            .icon {
-              margin: auto;
-            }
-          }
-        }
-      }
+      
       .contents {
         position: absolute;
-        // bottom: 20%;
         transform: translateX(-150%);
         transition: all 0.6s ease-in-out;
         //
@@ -131,22 +120,12 @@
 @media (max-width: 1280px) {
   .slider {
     .wrapper {
-      .bg {
-        .controls {
-          .btn {
-            .icon {
-              margin: auto;
-            }
-          }
-        }
-      }
+      
       .contents {
         position: absolute;
-        bottom: 100px;
         transform: translateX(-150%);
         transition: all 0.6s ease-in-out;
         .content {
-          // width: 260px;
           h2 {
           }
           .desc {
@@ -171,20 +150,21 @@
 @media (max-width: 960px) {
   .slider {
     .wrapper {
-      .bg {
-        .controls {
-          .btn {
-            width: 30px;
-            height: 30px;
-            .icon {
-              margin: auto;
-            }
+      .bgRow {
+        .bg {
+        }
+      }
+      .controls {
+        .btn {
+          width: 30px;
+          height: 30px;
+          .icon {
+            margin: auto;
           }
         }
       }
       .contents {
         position: absolute;
-        bottom: 50px;
         transform: translateX(-150%);
         transition: all 0.6s ease-in-out;
         .content {
@@ -228,22 +208,19 @@
 }
 @media (max-width: 600px) {
   .slider {
+    margin-top: 50px;
     .wrapper {
-      .bg {
-        .controls {
-          .btn {
-            width: 25px;
-            height: 25px;
-            .icon {
-              font-size: 15px;
-              margin: auto;
-            }
-          }
+      .bgRow {
+        .bg {
         }
+      }
+      .controls {
+        display: none;
+        
       }
       .contents {
         position: absolute;
-        bottom: 10px;
+        // bottom: 10px;
         transform: translateX(-150%);
         transition: all 0.6s ease-in-out;
         .content {

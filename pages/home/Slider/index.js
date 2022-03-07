@@ -39,7 +39,9 @@ const slides = [
 ];
 function Slider() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [mouseDownX, setMouseDownX] = useState(null)
+  const [startX, setStartX] = useState(null);
+  const [moveX, setMoveX] = useState(null);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -76,12 +78,19 @@ function Slider() {
     });
   };
 
-  const handleMouseDown = (e) => {
-    setMouseDownX(Number(e.clientX))
+  const handleTouchStart = (e) => {
+    console.log(e.touches[0].clientX)
+    setStartX(Number(e.touches[0].clientX))
     // console.log(e)
   }
-  const handleMouseUp = (e) => {
-    if(Number(e.clientX) > mouseDownX) {
+  const handleTouchMove = (e) => {
+    console.log(e.touches[0].clientX)
+    setMoveX(Number(e.touches[0].clientX))
+    // console.log(e)
+  }
+  const handleTouchEnd = () => {
+
+    if(moveX > startX) {
       setActiveIndex(prev=> {
         if(prev > 0) {
           return prev -1
@@ -90,7 +99,7 @@ function Slider() {
         }
       })
     }
-    if(Number(e.clientX) < mouseDownX) {
+    if(moveX < startX) {
       setActiveIndex(prev=>{
         if (prev < slides.length - 1) {
           return prev + 1
@@ -102,17 +111,19 @@ function Slider() {
   }
   return (
     <div className={styles.slider}>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper}
+        
+      >
         <div className={styles.bgRow}
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
           style={{
             width: `${slides.length}00%`,
             transform: `translateX(-${activeIndex * (100 / slides.length)}%)`
           }}
         >
           {
-          // slides.filter((item, index) => index === Number(activeIndex))
             slides.map((item, index) => (
               <div
                 key={index}
