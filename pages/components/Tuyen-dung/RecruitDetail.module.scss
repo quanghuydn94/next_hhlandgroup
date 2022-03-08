@@ -22,6 +22,7 @@
         text-transform: uppercase;
         padding: 0 0 15px;
         border-bottom: 2px solid var(--primary-color-);
+        text-align: justify;
       }
     }
     ul {
@@ -40,8 +41,9 @@
           text-transform: uppercase;
           font-family: "gillsansregular";
           border-bottom: 1px solid #eee;
+          text-align: justify;
           &:hover {
-            color: #eb2027;
+            color: var(--text-hover-);
             transition: all 0.2s ease-in-out;
           }
         }
@@ -53,6 +55,7 @@
     float: right;
     padding: 13.125px;
     .page_title {
+      text-align: justify;
       position: relative;
       color: var(--primary-color-);
       font-size: 26px;
@@ -70,6 +73,10 @@
         padding: 10px;
         font-size: 14px;
         margin-top: -5px;
+        p {
+          margin: 0;
+          text-align: justify;
+        }
         h2 {
           font-size: 22px;
           font-weight: 400;

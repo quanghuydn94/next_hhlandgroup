@@ -36,6 +36,7 @@ export default function Recruit({ handleDetail }) {
                 <img
                   src="https://hhlandgroup.com.vn/wp-content/uploads/2021/07/TD-QN-300x251.jpg"
                   alt=""
+                  width="100%"
                 />
               </div>
               <div className={styles.project_info}>

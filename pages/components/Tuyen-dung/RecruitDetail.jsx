@@ -28,8 +28,8 @@ export default function RecruitDetail() {
             </h2>
             <h3>Tuyển dụng mảng Kinh doanh dự án:</h3>
 
-            <div>– 01 Trưởng phòng Kinh doanh</div>
-            <div>– 20 Sale chuyên bán dự án</div>
+            <p>– 01 Trưởng phòng Kinh doanh</p>
+            <p>– 20 Sale chuyên bán dự án</p>
           </div>
           <div>
             <img
@@ -39,8 +39,8 @@ export default function RecruitDetail() {
           </div>
           <h3>Tuyển dụng mảng Kinh doanh Thuê & Cho thuê:</h3>
           <div className={styles.page_contentDetail}>
-            <div>– 01 Trưởng phòng Kinh doanh</div>
-            <div>– 10 Sale mảng thuê và cho thuê</div>
+            <p>– 01 Trưởng phòng Kinh doanh</p>
+            <p>– 10 Sale mảng thuê và cho thuê</p>
           </div>
           <div>
             <img
@@ -49,46 +49,44 @@ export default function RecruitDetail() {
             />
           </div>
           <div className={styles.page_contentDetail}>
-            <div>
-              TRỞ THÀNH CHIẾN BINH SALE CỦA H&H LAND GROUP bạn sẽ được gì?
-            </div>
-            <div>
+            <p>TRỞ THÀNH CHIẾN BINH SALE CỦA H&H LAND GROUP bạn sẽ được gì?</p>
+            <p>
               – Thu nhập CỰC KHỦNG – KHÔNG GIỚI HẠN, tăng lương hàng năm theo
               năng lực.
-            </div>
-            <div>
+            </p>
+            <p>
               – Hoa hồng CAO NHẤT thị trường 30-100TR/ giao dịch + THƯỞNG NÓNG
-            </div>
-            <div>
+            </p>
+            <p>
               – Đào tạo kỹ năng bán hàng chuyên nghiệp, bài bản, kỹ năng
               marketing chuyên sâu hoàn toàn MIỄN PHÍ.
-            </div>
-            <div>
+            </p>
+            <p>
               – Thưởng Lễ, Tết, thưởng thi đua cuối năm cực hấp dẫn từ Công ty.
-            </div>
-            <div>
+            </p>
+            <p>
               – Thưởng các ngày lễ trong năm cho toàn bộ nhân viên, cho nhân
               viên nữ, con em của nhân viên.
-            </div>
+            </p>
           </div>
           <div className={styles.page_contentDetail}>
-            <div>BẠN CẦN NHỮNG GÌ?</div>
-            <div>
+            <p>BẠN CẦN NHỮNG GÌ?</p>
+            <p>
               – Ưu tiên ứng viên đã có kinh nghiệm, chưa có kinh nghiệm sẽ được
               đào tạo từ đầu. năng lực.
-            </div>
-            <div>– Đam mê kinh doanh, kiếm tiền.</div>
-            <div>– Có khả năng học hỏi nhanh, nhiệt tình với công việc.</div>
-            <div>– Có Laptop và phương tiện đi lại</div>
+            </p>
+            <p>– Đam mê kinh doanh, kiếm tiền.</p>
+            <p>– Có khả năng học hỏi nhanh, nhiệt tình với công việc.</p>
+            <p>– Có Laptop và phương tiện đi lại</p>
           </div>
           <div className={styles.page_contentDetail}>
-            <div>NỘP HỒ SƠ/CV TRỰC TIẾP VỀ ĐỊA CHỈ:</div>
-            <div>
+            <p>NỘP HỒ SƠ/CV TRỰC TIẾP VỀ ĐỊA CHỈ:</p>
+            <p>
               – Tòa nhà H&H TOWER 382 Nguyễn Hữu Thọ, P. Khuê Trung, Q. Cẩm Lệ,
               TP. Đà Nẵng.
-            </div>
-            <div>– Email: hhlandgroup.dn@gmail.com</div>
-            <div>– Hotline: 0357988138 – Ms Nguyên</div>
+            </p>
+            <p>– Email: hhlandgroup.dn@gmail.com</p>
+            <p>– Hotline: 0357988138 – Ms Nguyên</p>
           </div>
         </div>
         <div className={styles.page_other}>

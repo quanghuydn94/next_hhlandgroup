@@ -69,6 +69,7 @@
         }
         .page_content {
           h1 {
+            color: #333;
             font-size: 20px;
             margin-bottom: 10px;
           }
@@ -81,6 +82,7 @@
             }
             .media_body {
               p {
+                text-align: justify;
                 font-style: italic;
               }
             }
@@ -89,15 +91,14 @@
             h3 {
               font-weight: normal;
               font-size: 16px;
-              color: #686868;
+              color: var(--text-color-);
             }
             p {
-              color: #686868;
-
+              color: var(--text-color-);
+              text-align: justify;
               padding: 10px;
               font-size: 14px;
               margin-top: -5px;
-              font-weight: 700;
             }
             .video {
               iframe {
@@ -108,7 +109,8 @@
           ul {
             li {
               p {
-                color: #686868;
+                color: var(--text-color-);
+                text-align: justify;
               }
             }
           }
