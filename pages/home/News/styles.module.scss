@@ -7,6 +7,7 @@
     margin: 0 auto;
     h2 {
       color: var(--primary-color-);
+      padding: 10px 0;
       border-bottom: 3px solid var(--primary-color-);
     }
     .item {
@@ -15,6 +16,7 @@
         border-top: none;
         cursor: pointer;
         border-radius: 6px;
+        border: 1px solid transparent;
         box-shadow: 4px 4px 4px rgba(226, 219, 219, 0.3);
         transition: all 0.25s ease-in-out;
         &:hover {
