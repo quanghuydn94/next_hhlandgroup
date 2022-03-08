@@ -1,5 +1,5 @@
 .Contact {
-  margin-top: 150px;
+  margin-top: 20px;
   .ContactMain {
     max-width: 1170px;
     margin: 0 auto;
@@ -17,11 +17,11 @@
       line-height: 30px;
     }
     .page_content_detail {
-      float: left;
+      float: right;
       clear: both;
-      width: 48%;
-      margin-bottom: 30;
-
+      width: 57%;
+      margin-bottom: 30px;
+      margin-top: 22px;
       p {
         color: var(--text-color-);
         a {
@@ -41,18 +41,22 @@
           font-weight: 400;
         }
       }
+      .gg_map {
+        margin-top: 10px;
+      }
     }
     .page_input {
-      float: right;
-      width: 48%;
+      float: left;
+      width: 40%;
       margin-bottom: 30px;
       .contact_txt {
         padding: 0;
         .contact_txt_bg {
+          padding: 0 10px;
           position: relative;
           float: left;
-          width: 48%;
-          height: 28px;
+          width: 100%;
+          height: 35px;
           border: 1px solid #ddd;
           margin: 22px 0 0;
           font-size: 13px;
@@ -61,9 +65,10 @@
         }
         .contact_txt_bg1 {
           position: relative;
+          padding: 0 10px;
           float: right;
-          width: 48%;
-          height: 28px;
+          width: 100%;
+          height: 35px;
           border: 1px solid #ddd;
           margin: 22px 0 0;
           font-size: 13px;
@@ -96,6 +101,9 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .img_banner {
+    margin-top: 100px;
+  }
   .ContactMain {
     .page_content_detail {
       width: 100% !important;

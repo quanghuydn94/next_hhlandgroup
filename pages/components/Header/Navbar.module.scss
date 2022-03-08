@@ -4,6 +4,7 @@ $textColor: var(--primary-color-);
   top: 27px;
   width: 100%;
   z-index: 10000;
+  transition: all 0.25s ease-in-out;
   .header {
     z-index: 1000;
     width: 100%;
@@ -121,6 +122,10 @@ $textColor: var(--primary-color-);
     transform: scaleY(1);
   }
 }
+.root.hiddenContact {
+  top: 0;
+
+}
 
 @media (max-width: 1920px) {
 }
@@ -196,9 +201,9 @@ $textColor: var(--primary-color-);
         position: relative;
 
         .logo {
+          width: 60px;
           img {
-            width: 100px;
-            // height: 100%;
+            width: 60px;
             cursor: pointer;
           }
         }
