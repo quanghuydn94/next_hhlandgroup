@@ -1,3 +1,9 @@
+.img_Banner {
+  img {
+    object-fit: cover;
+    height: 500px;
+  }
+}
 .introduce {
   margin-top: 20px;
   .page_introduce {
@@ -126,9 +132,6 @@
   }
 }
 @media screen and (max-width: 960px) {
-  .img_banner {
-    margin-top: 100px;
-  }
   .introduce {
     margin-top: 50px;
 
@@ -148,6 +151,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .img_Banner {
+    display: none;
+  }
   .introduce {
     padding: 0 13.125px;
     .page_introduce {

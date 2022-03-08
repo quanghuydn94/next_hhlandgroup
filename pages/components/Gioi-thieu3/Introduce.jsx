@@ -7,12 +7,14 @@ export default function Introduce() {
     setActive(index);
   };
   return (
-    <div className={styles.img_slider}>
-      <img
-        src="https://hhlandgroup.com.vn/wp-content/uploads/2019/06/duan.jpg"
-        alt=""
-        width="100%"
-      />
+    <div>
+      <div className={styles.img_Banner}>
+        <img
+          src="https://hhlandgroup.com.vn/wp-content/uploads/2019/06/duan.jpg"
+          alt=""
+          width="100%"
+        />
+      </div>
       <div className={styles.introduce}>
         <div className={styles.page_introduce}>
           <ul>

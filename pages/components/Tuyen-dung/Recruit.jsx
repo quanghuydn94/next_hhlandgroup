@@ -6,8 +6,7 @@ import tuyendung from "../../assets/tuyendung.jpg";
 export default function Recruit({ handleDetail }) {
   return (
     <div>
-      <div className={styles.img_banner}>
-        {" "}
+      <div className={styles.img_Banner}>
         <img src="/logo/tuyendung.jpg" alt="" width="100%" />
       </div>
       <div className={styles.Recruit}>

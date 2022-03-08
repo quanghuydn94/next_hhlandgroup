@@ -1,3 +1,9 @@
+.img_Banner {
+  img {
+    object-fit: cover;
+    height: 500px;
+  }
+}
 .Contact {
   margin-top: 20px;
   .ContactMain {
@@ -18,7 +24,6 @@
     }
     .page_content_detail {
       float: right;
-      clear: both;
       width: 57%;
       margin-bottom: 30px;
       margin-top: 22px;
@@ -54,19 +59,6 @@
         .contact_txt_bg {
           padding: 0 10px;
           position: relative;
-          float: left;
-          width: 100%;
-          height: 35px;
-          border: 1px solid #ddd;
-          margin: 22px 0 0;
-          font-size: 13px;
-          font: 13px/20px "Arial";
-          outline: none;
-        }
-        .contact_txt_bg1 {
-          position: relative;
-          padding: 0 10px;
-          float: right;
           width: 100%;
           height: 35px;
           border: 1px solid #ddd;
@@ -116,15 +108,21 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .ContactMain {
-    padding: 0 13.125px;
-    .page_input {
-      .contact_txt {
-        .contact_txt_bg {
-          width: 100% !important;
-        }
-        .contact_txt_bg1 {
-          width: 100% !important;
+  .img_Banner {
+    display: none;
+  }
+  .Contact {
+    margin-top: 113px;
+    .ContactMain {
+      padding: 0 13.125px;
+      .page_input {
+        .contact_txt {
+          .contact_txt_bg {
+            width: 100% !important;
+          }
+          .contact_txt_bg1 {
+            width: 100% !important;
+          }
         }
       }
     }

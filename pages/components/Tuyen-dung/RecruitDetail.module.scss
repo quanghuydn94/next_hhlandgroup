@@ -1,3 +1,9 @@
+.img_Banner {
+  img {
+    object-fit: cover;
+    height: 500px;
+  }
+}
 .Recruit {
   max-width: 1170px;
   margin: 0 auto;
@@ -137,10 +143,16 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .menu_left {
-    width: 100% !important;
+  .img_Banner {
+    display: none;
   }
-  .content {
-    width: 100% !important;
+  .Recruit {
+    margin-top: 50px;
+    .menu_left {
+      width: 100% !important;
+    }
+    .content {
+      width: 100% !important;
+    }
   }
 }
