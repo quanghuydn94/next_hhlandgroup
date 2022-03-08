@@ -6,7 +6,7 @@ function ProjectCate() {
   const router = useRouter();
   const handleDetail = (item) => {
     router.push({
-      pathname: `/project/trien-khai/${item.title}`,
+      pathname: `/du-an/trien-khai/${item.title}`,
       query: item.id,
     });
   };

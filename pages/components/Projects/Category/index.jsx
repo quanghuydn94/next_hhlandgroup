@@ -19,10 +19,10 @@ function Category({ pathName, handleDetail }) {
   };
   return (
     <LayoutProject>
-      {pathName === "/project/thanh-khoan" && (
+      {pathName === "/du-an/thanh-khoan" && (
         <Typography variant="h6">Dự án đã thanh khoản</Typography>
       )}
-      {pathName === "/project/trien-khai" && (
+      {pathName === "/du-an/trien-khai" && (
         <Typography variant="h6">Dự án đang triển khai</Typography>
       )}
 

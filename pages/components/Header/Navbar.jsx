@@ -5,7 +5,7 @@ import styles from "./Navbar.module.scss";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { useRouter } from "next/router";
-function Navbar({isHideContact}) {
+function Navbar({ isHideContact }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isBars, setIsBars] = useState(false);
   const router = useRouter();
@@ -15,34 +15,34 @@ function Navbar({isHideContact}) {
       title: "Trang chủ",
     },
     {
-      link: "/Gioi-thieu",
+      link: "/gioi-thieu",
       title: "Giới thiệu",
     },
     {
-      link: "/project",
+      link: "/du-an",
       title: "Dự án",
       list: [
         {
           title: "Dự án đang triển khai",
-          link: "/project/trien-khai",
+          link: "/du-an/trien-khai",
         },
         {
           title: "Dự án đã thanh khoản",
-          link: "/project/thanh-khoan",
+          link: "/du-an/thanh-khoan",
         },
       ],
     },
 
     {
-      link: "/news",
+      link: "/tin-tuc",
       title: "Tin tức",
     },
     {
-      link: "/Tuyen-dung",
+      link: "/tuyen-dung",
       title: "Tuyển dụng",
     },
     {
-      link: "/Lien-he",
+      link: "/lien-he",
       title: "Liên hệ",
     },
   ];
@@ -66,9 +66,12 @@ function Navbar({isHideContact}) {
     setIsBars(!isBars);
   };
   return (
-    <div className={clsx(styles.root, {
-      [styles.hiddenContact] : isHideContact
-    })} onMouseLeave={handleMouseLeave}>
+    <div
+      className={clsx(styles.root, {
+        [styles.hiddenContact]: isHideContact,
+      })}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className={clsx(styles.header)}>
         <div className={clsx(styles.container)}>
           <div className={styles.logo}>

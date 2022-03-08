@@ -1,4 +1,4 @@
-import Home from "./home/index";
+import Home from "./trang-chu/index";
 
 export default function Index() {
   return (

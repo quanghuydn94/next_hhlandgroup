@@ -1,4 +1,4 @@
-import { CardMedia, Grid, MenuItem } from "@material-ui/core";
+import { Grid, MenuItem } from "@material-ui/core";
 import { ArrowRight } from "@material-ui/icons";
 import Link from "next/link";
 import React from "react";
@@ -9,17 +9,12 @@ import { useRouter } from "next/router";
 function LayoutProject({ children }) {
   const router = useRouter();
   const navLink = [
-    { link: "/project/thanh-khoan", title: "Dự án đã thanh khoản" },
-    { link: "/project/trien-khai", title: "Dự án đang triển khai" },
+    { link: "/du-an/thanh-khoan", title: "Dự án đã thanh khoản" },
+    { link: "/du-an/trien-khai", title: "Dự án đang triển khai" },
   ];
-  console.log(router);
   return (
     <>
       <Banner />
-      <CardMedia
-        className={styles.image}
-        image="https://hhlandgroup.com.vn/wp-content/uploads/2019/06/duan.jpg"
-      />
       <Grid container justifyContent="center" className={styles.container}>
         <Grid item md={12} sm={12} xs={12}>
           <Grid container>
@@ -30,8 +25,6 @@ function LayoutProject({ children }) {
                     <MenuItem
                       className={clsx(styles.item, {
                         [styles.active]: router.asPath == item.link,
-                        // ||
-                        // router.route == item.link + "/[...slug]" || router.route == item.link + "/[...slug]" ,
                       })}
                     >
                       {item.title}
