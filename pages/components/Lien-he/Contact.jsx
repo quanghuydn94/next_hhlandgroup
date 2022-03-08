@@ -6,7 +6,7 @@ import styles from "./Contact.module.scss";
 function Contact() {
   return (
     <>
-      <div className={styles.img_banner}>
+      <div className={styles.img_Banner}>
         <img
           src="https://hhlandgroup.com.vn/wp-content/uploads/2019/06/duan.jpg"
           alt=""
@@ -16,6 +16,43 @@ function Contact() {
       <div className={styles.Contact}>
         <div className={styles.ContactMain}>
           <Typography variant="h2">Liên Hệ</Typography>
+          <form className={styles.page_input}>
+            <div className={styles.contact_txt}>
+              <input
+                type="text"
+                placeholder="Họ và tên"
+                className={styles.contact_txt_bg}
+              />
+            </div>
+            <div className={styles.contact_txt}>
+              <input
+                type="text"
+                placeholder="Email"
+                className={styles.contact_txt_bg}
+              />
+            </div>
+            <div className={styles.contact_txt}>
+              <input
+                type="text"
+                placeholder="Điện thoại"
+                className={styles.contact_txt_bg}
+              />
+            </div>
+            <div className={styles.contact_txt}>
+              <input
+                type="text"
+                placeholder="Địa chỉ"
+                className={styles.contact_txt_bg}
+              />
+            </div>
+            <div className={styles.contact_txt}>
+              <textarea
+                placeholder="Nội Dung "
+                className={styles.contact_txta_bg}
+              ></textarea>
+            </div>
+            <Button>Gởi</Button>
+          </form>
           <div className={styles.page_content_detail}>
             <Typography>
               <span>Công ty TNHH An Vạn Tín</span>
@@ -41,43 +78,6 @@ function Contact() {
               ></iframe>
             </div>
           </div>
-          <form className={styles.page_input}>
-            <div className={styles.contact_txt}>
-              <input
-                type="text"
-                placeholder="Họ và tên"
-                className={styles.contact_txt_bg}
-              />
-            </div>
-            <div className={styles.contact_txt}>
-              <input
-                type="text"
-                placeholder="Email"
-                className={styles.contact_txt_bg1}
-              />
-            </div>
-            <div className={styles.contact_txt}>
-              <input
-                type="text"
-                placeholder="Điện thoại"
-                className={styles.contact_txt_bg}
-              />
-            </div>
-            <div className={styles.contact_txt}>
-              <input
-                type="text"
-                placeholder="Địa chỉ"
-                className={styles.contact_txt_bg1}
-              />
-            </div>
-            <div className={styles.contact_txt}>
-              <textarea
-                placeholder="Nội Dung "
-                className={styles.contact_txta_bg}
-              ></textarea>
-            </div>
-            <Button>Gởi</Button>
-          </form>
         </div>
       </div>
     </>

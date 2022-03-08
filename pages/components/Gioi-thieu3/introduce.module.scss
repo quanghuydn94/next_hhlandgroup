@@ -1,3 +1,9 @@
+.img_Banner {
+  img {
+    object-fit: cover;
+    height: 500px;
+  }
+}
 .introduce {
   margin-top: 20px;
   .page_introduce {
@@ -69,6 +75,7 @@
         }
         .page_content {
           h1 {
+            color: #333;
             font-size: 20px;
             margin-bottom: 10px;
           }
@@ -81,6 +88,7 @@
             }
             .media_body {
               p {
+                text-align: justify;
                 font-style: italic;
               }
             }
@@ -89,10 +97,11 @@
             h3 {
               font-weight: normal;
               font-size: 16px;
-              color: #686868;
+              color: var(--text-color-);
             }
             p {
-              color: #686868;
+              color: var(--text-color-);
+              text-align: justify;
               padding: 10px;
               font-size: 14px;
               margin-top: -5px;
@@ -106,7 +115,8 @@
           ul {
             li {
               p {
-                color: #686868;
+                color: var(--text-color-);
+                text-align: justify;
               }
             }
           }
@@ -122,9 +132,6 @@
   }
 }
 @media screen and (max-width: 960px) {
-  .img_banner {
-    margin-top: 100px;
-  }
   .introduce {
     margin-top: 50px;
 
@@ -144,6 +151,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .img_Banner {
+    display: none;
+  }
   .introduce {
     padding: 0 13.125px;
     .page_introduce {
