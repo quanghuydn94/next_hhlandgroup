@@ -11,7 +11,7 @@ function Home() {
         window.scrollTo({ top: 560, behavior: "smooth" });
       }
     }, [5000]);
-  }, [pageYOffset]);
+  }, []);
   return (
     <div>
       <Slider />

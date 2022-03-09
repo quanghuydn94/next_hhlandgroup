@@ -1,9 +1,6 @@
 import React from "react";
-import RecruitDetail from "../components/Tuyen-dung/RecruitDetail";
-import { useRouter } from "next/dist/client/router";
+import RecruitDetail from "../components/Recruitment/RecruitDetail";
 export default function RecruitmentDetail() {
-  const router = useRouter();
-  console.log(router);
   return (
     <div>
       <RecruitDetail />

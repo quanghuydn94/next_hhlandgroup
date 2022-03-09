@@ -1,7 +1,7 @@
 import React from "react";
-import Contact from "../components/Lien-he/Contact";
+import Contact from "../components/Contact/Contact";
 
-export default function Index() {
+export default function ContacPage() {
   return (
     <div>
       <Contact />

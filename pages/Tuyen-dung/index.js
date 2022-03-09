@@ -1,14 +1,16 @@
 import React from "react";
-import Recruit from "../components/Tuyen-dung/Recruit";
+import Recruit from "../components/Recruitment/Recruit";
 import { useRouter } from "next/dist/client/router";
-export default function index() {
+function RecruitmentPage() {
   const router = useRouter();
   const handleDetail = () => {
-    router.push({ pathname: `/Tuyen-dung/detail` });
+    router.push({ pathname: `/dung/detail` });
   };
+
   return (
     <div>
       <Recruit handleDetail={handleDetail} />
     </div>
   );
 }
+export default RecruitmentPage;

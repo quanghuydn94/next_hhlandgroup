@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import styles from "./introduce.module.scss";
 
@@ -6,6 +7,7 @@ export default function Introduce() {
   const handleClickNav = (index) => {
     setActive(index);
   };
+  const router = useRouter();
   return (
     <div>
       <div className={styles.img_Banner}>

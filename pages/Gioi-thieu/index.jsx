@@ -1,9 +1,10 @@
 import React from "react";
-import Introduce from "../components/Gioi-thieu3/Introduce";
-export default function Index() {
+import Introduce from "../components/Introduce/Introduce";
+function IntroductionPage() {
   return (
     <div>
       <Introduce />
     </div>
   );
 }
+export default IntroductionPage;
