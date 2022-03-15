@@ -4,7 +4,7 @@ import { useRouter } from "next/dist/client/router";
 function RecruitmentPage() {
   const router = useRouter();
   const handleDetail = () => {
-    router.push({ pathname: `/dung/detail` });
+    router.push({ pathname: `/tuyen-dung/detail` });
   };
 
   return (

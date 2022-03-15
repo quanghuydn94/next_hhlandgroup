@@ -5,7 +5,7 @@ import NewsPage from "../components/News";
 function News() {
   const router = useRouter();
   const handleDetail = (item) => {
-    router.push({ pathname: `/news/${item.title}`, query: item.id });
+    router.push({ pathname: `/tin-tuc/${item.title}`, query: item.id });
   };
   return (
     <>
